@@ -1,0 +1,675 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- title of site -->
+        <title>Inventory Project</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="static/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="static/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="static/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="static/css/bootsnav.css" 
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="static/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="static/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand mr-4"><img style="max-width:100px; margin-top: -7px;" src="/static/images.png"></a>
+          <a class="navbar-brand mr-4" href="/">Mahindra-Swaraj</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+              <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+               <a class="nav-item nav-link" href="{{ url_for('inventory') }}">Inventory Model</a>
+               <a class="nav-item nav-link" href="{{url_for('demand' ) }}">Lot-Size Forecast</a>
+               <a class="nav-item nav-link" href="{{url_for('stocastic' ) }}">Variable Demand</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="nav navbar-right">
+      `			<li class="nav-item dropdown">
+                <div class="dropdown-content">
+            
+            <li><div class="dropdown-divider"></div></li>
+          		{% if current_user.is_authenticated %}
+          		<a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+          		{% else %}
+          		<li><a class="dropdown-item" href="{{ url_for('login') }}">Login</a></li>
+          		<li><a class="dropdown-item" href="{{ url_for('register') }}">Register</a></li>
+          		{% endif %}
+      </div>
+      </li>
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </nav>
+    </header><!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<!-- /.top-area-->
+		<!-- top-area End -->
+	
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2>CONTROL THE<span> INVENTORY</span>, CONTROL<br>THE PROFITS<span>!</span>   </h2>
+							<p>PROJECT BY KARANVIR SINGH</p>
+							
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="about" class="about">
+			<div class="section-heading text-center">
+				<h2>ABOUT THE PROJECT</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-txt">
+								<h3>
+								THE MAIN OBJECTIVE OF THIS PROJECT WAS TO ANALYSE AND STUDY THE BILL OF MATERIAL OF PLANT-1 OF SWARAJ DIVISION AND OPTIMIZE THE INVENTORY MANAGEMENT TECHNIQUES BY INCORPORATING SIMPLE MODELS AND CREATING A SOFTWARE FOR MANAGING AND IMPROVING FURTHER AMOUNT OF DATA IN A ROBUST AND SIMPLE USER INTERFACE.
+								</h3>
+								<p>
+									The approach which I implemented to achieve this goal is by studying and analysing research papers of many production environments and developing an algorithm of my own using the techniques of database management and machine learning to optimize and catalyse the process of designing a standard protocol for a particular class of inventory.
+								</p>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>Mentor</h3>
+											<p>Mr Munish Punj</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>email</h3>
+											<p>Punj.Munish@Mahindraswaraj.com</p>
+										</div>
+									</div>
+									&nbsp;
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>Contact No</h3>
+											<p>9876180601</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="single-about-img">
+								<img src="static/images/about/project.jpg" alt="profile_image">
+							
+									<!-- / li -->
+										
+										
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+		
+		<!--education start -->
+		<section id="education" class="education">
+			<div class="section-heading text-center">
+				<h2>DATA FLOW DIAGRAM</h2>
+			</div>
+			<div class="container">
+				<div class="education-horizontal-timeline">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>Bill of Material</h2>
+									<h3>First, the BOM <span>is generated</span></h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											What is a BOM?
+										</h4>
+										<br>
+										<p>A bill of materials (BOM) is an extensive list of raw materials, components, and instructions required to construct, manufacture, or repair a product or service. A bill of materials usually appears in a hierarchical format, with the highest level displaying the finished product and the bottom level showing individual components and materials.</p>
+										<p class="description">
+											An engineering bill of materials defines the design of the finished product. It includes all alternative and substitute part numbers and parts contained in the drawing notes. Every line of the bill of materials (BOM) includes the product code, part name, part number, part revision, description, quantity, unit of measure, size, length, weight, and specifications or features of the product.
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>Inventory is classified into categories</h2>
+									<h3>Information <span>is derived</span> from the bom</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Creating visualizations of data
+										</h4>
+										<h5>Using Python, Excel</h5>
+										<p class="description">
+											<ul>
+												<li>
+												Designing pivot charts.</li>
+												<li>
+													Creating a dataframe in python.
+												</li>
+
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>Predicting the lot size from demand</h2>
+									<h3>Replenishment methods depend on demand</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal spacial-horizontal-line
+									"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											The concept of Linear Optimization
+										</h4>
+										<h5>Using the techniques of machine appropiate model is implemented to forecating the lot-size for a particular class of inventory.</h5>
+										<p class="description">
+											After studying various inventory lot sizing techniques, we categorize the methods into two parts:
+											<ul>
+												<li>
+												Static Demand.</li>
+												<li>
+													Dynamic Demand.
+												</li>
+											</ul>
+											<br>
+											If we could forecast the demand pattern for a particular class of inventory, we will be able to implement appropiate lot sizing methods and formulas to manage and move inventory efficiently.
+										</p>
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.education-->
+		<!--education end -->
+
+		
+		<!--experience start -->
+		<section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>Steps to manage Inventory</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>Step 1</h2>
+													<h3>Warehouse</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															Counting
+														</h4>
+														<h5>heading</h5>
+														<p class="description">
+															process
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														step 2
+													</h2>
+													<h3>process desc</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															
+														</h4>
+														<h5>heading</h5>
+														<p class="description">
+															desc 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														heading 
+													</h2>
+													<h3>desc1</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>Step 3</h2>
+													<h3>Description</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															heading 
+														</h4>
+														<h5>sub</h5>
+														<p class="description">
+															description 
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														Step 4
+													</h2>
+													<h3>Process</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															Step 4
+														</h4>
+														<h5>Desc</h5>
+														<p class="description">
+															Process
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														Desc
+													</h2>
+													<h3>Process</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>Step 5 </h2>
+													<h3>Heading</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															Process
+														</h4>
+														<h5>1</h5>
+														<p class="description">
+															2
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+							</ul>
+						</div><!--.main-timeline-->
+					</div><!--.experience-content-->
+			</div>
+
+		</section><!--/.experience-->
+		<!--experience end -->
+
+		<!--profiles start -->
+		
+
+		<!--portfolio start -->
+		<section id="portfolio" class="portfolio">
+			<div class="portfolio-details">
+				<div class="section-heading text-center">
+					<h2>Work-flow</h2>
+				</div>
+				<div class="container">
+					<div class="portfolio-content">
+						<div class="isotope">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="static/images/portfolio/1.jpeg" alt="portfolio image"/>
+										<h3>1. Research</h3>
+										<div class="isotope-overlay">
+											<a href="#">
+												Research
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="static/images/portfolio/2.png" alt="portfolio image"/>
+										<h3>2. Report</h3>
+										<div class="isotope-overlay">
+											<a href="#">
+												Report Preparation
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="static/images/portfolio/3.png" alt="portfolio image"/>
+										<h3>3. Database Preparation</h3>
+										<div class="isotope-overlay">
+											<a href="#">
+												Collecting Data from User
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+
+								<div class="col-sm-4">
+									<div class="item">
+										<img src="static/images/portfolio/4.png" alt="portfolio image"/>
+										<h3>4. BOM Analysis</h3>
+										<div class="isotope-overlay">
+											<a href="#">
+												BOM Analysis
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+									<div class="item">
+										<img src="static/images/portfolio/5.png" alt="portfolio image"/>
+										<h3>5. Machine Learning Model: Linear Regression</h3>
+										<div class="isotope-overlay">
+											<a href="#">
+												Machine Learning
+											</a>
+										</div><!-- /.isotope-overlay -->
+									</div><!-- /.item -->
+								</div><!-- /.col -->
+							</div><!-- /.row -->
+						</div><!--/.isotope-->
+					</div><!--/.gallery-content-->
+				</div><!--/.container-->
+			</div><!--/.portfolio-details-->
+
+		</section><!--/.portfolio-->
+		<!--portfolio end -->
+
+		<!--clients start -->
+
+		
+		
+		
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form method="POST" action="">
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+               										<input type="submit" class="btn btn-success" value="Submit">
+            									</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>Karanvir Singh</h3>
+										<p>Punjab Engineering College</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>phone</h3>
+											<p>9592430410</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>karanvirsingh.be18mech@pec.edu.in</p>
+										</div>
+										
+										<a href="https://github.com/kvsui">GitHub</a>
+									</div>
+								</div><!--/.contact-adress-->
+								<!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+		<!--contact end -->
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						&copy; copyright Swaraj. design and developed by Karanvir Singh</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="static/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="static/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="static/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="static/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="static/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="static/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="static/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="static/js/custom.js"></script>
+        
+    </body>
+	
+</html>

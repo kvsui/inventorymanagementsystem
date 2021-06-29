@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %} 
+<div class="content-section">
+        <form id='package_form' method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                    <div class="form-group">
+                        {{ form.ID.label(class="form-control-label") }}
+
+                    
+                        {{ form.ID(class="form-control form-control-lg")}}
+
+                    </div>
+                    <div class="form-group">
+                        {{ form.Class.label(class="form-control-label") }}
+
+                    
+                        {{ form.Class(class="form-control form-control-lg")}}
+                        
+                    </div>
+             </fieldset>       
+            <div class="form-group">
+                {{ form.B1(class="btn btn-outline-info") }}
+                <input type="Submit" class="btn btn-dark" name="Upd" value="Update">
+                <input type="submit" class="btn btn-dark" name="Del" value="Delete">
+            </div>
+    </div>
+    <table class='table' border=5 >
+<thead> <td>ID</td> <td>Part Number</td> <td>Quantity</td> <td>Cost</td><td>Class</td>
+</thead>
+{% for i in rows %}
+<tr>
+	<td> {{i.ID}} 
+	<td> {{i.Name}} 
+	<td> {{i.Quantity}}
+	<td> {{i.Cost}} 
+    <td> {{i.Class}}
+</tr>
+{% endfor %}
+</tr>
+</table>
+</form>
+{% endblock content %}

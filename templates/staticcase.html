@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                     <div class="form-group">
+                        <br><br>
+                        {{ form.alpha.label(class="form-control-label") }}
+
+                    
+                        {{ form.alpha(class="form-control form-control-lg")}}
+                    </div>
+             </fieldset>       
+            <div class="form-group">
+                {{ form.Submit(class="btn btn-outline-info") }}
+            </div>
+            <div class="form-group">
+                
+             <label for="Time for Production">Appropiate time for Production is: {{ t1 }} month</label><br>
+             <label for="Time for Production">Time in which Inventory will finish: {{ t2 }} month</label><br>
+             <label for="Time for Production">Optimised Total Cost will be: Rs.{{ K }}</label><br>
+            </div>
+    </div>
+{% endblock content %}

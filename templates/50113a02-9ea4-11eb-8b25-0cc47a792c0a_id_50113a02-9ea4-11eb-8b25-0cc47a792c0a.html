@@ -1,0 +1,921 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_045{font-family:Times,serif;font-size:28.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_045{font-family:Times,serif;font-size:28.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:22.1px;color:rgb(90,89,90);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Times,serif;font-size:22.1px;color:rgb(90,89,90);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:14.0px;color:rgb(64,63,64);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:14.0px;color:rgb(64,63,64);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:9.2px;color:rgb(64,63,64);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Times,serif;font-size:9.2px;color:rgb(64,63,64);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:"Calibri",serif;font-size:14.0px;color:rgb(67,113,196);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:"Calibri",serif;font-size:14.0px;color:rgb(67,113,196);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_046{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:"Calibri",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Calibri",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:"Calibri Bold",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:"Calibri Bold",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Calibri Light",serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Calibri Light",serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_047{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:13.0px;color:rgb(33,36,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:13.0px;color:rgb(33,36,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:"Calibri Italic",serif;font-size:9.2px;color:rgb(67,83,106);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_020{font-family:"Calibri Italic",serif;font-size:9.2px;color:rgb(67,83,106);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:"Calibri Light",serif;font-size:13.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:"Calibri Light",serif;font-size:13.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:"Calibri",serif;font-size:14.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:"Calibri",serif;font-size:14.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:"Calibri Italic",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_027{font-family:"Calibri Italic",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:"Calibri",serif;font-size:10.1px;color:rgb(255,254,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:"Calibri",serif;font-size:10.1px;color:rgb(255,254,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:"Calibri",serif;font-size:10.6px;color:rgb(255,254,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:"Calibri",serif;font-size:10.6px;color:rgb(255,254,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:"Calibri",serif;font-size:13.0px;color:rgb(255,254,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:"Calibri",serif;font-size:13.0px;color:rgb(255,254,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Times,serif;font-size:14.0px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Times,serif;font-size:14.0px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:14.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:14.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_048{font-family:Times,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:"Calibri Bold",serif;font-size:16.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_035{font-family:"Calibri Bold",serif;font-size:16.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_036{font-family:"Cambria",serif;font-size:14.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:"Cambria",serif;font-size:14.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_038{font-family:"Cambria",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:"Cambria",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:"Calibri Bold",serif;font-size:14.0px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_041{font-family:"Calibri Bold",serif;font-size:14.0px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Times,serif;font-size:14.0px;color:rgb(4,98,193);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_049{font-family:Times,serif;font-size:14.0px;color:rgb(4,98,193);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script type="text/javascript" src="/static/wz_jsgraphics.js"></script>
+</head>
+<body>
+	<header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand mr-4"><img style="max-width:100px; margin-top: -7px;" src="/static/images.png"></a>
+          <a class="navbar-brand mr-4" href="/">Mahindra-Swaraj</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+              <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+               <a class="nav-item nav-link" href="{{ url_for('inventory') }}">Inventory Model</a>
+            </div>
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              {% if current_user.is_authenticated %}
+                <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+                <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+              {% else %}
+                <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background01.jpg" width=595 height=842></div>
+<div style="position:absolute;left:241.15px;top:126.96px" class="cls_045"><span class="cls_045">REPORT</span></div>
+<div style="position:absolute;left:108.83px;top:190.32px" class="cls_006"><span class="cls_006">INVENTORY MANAGEMENT AND</span></div>
+<div style="position:absolute;left:208.05px;top:228.24px" class="cls_006"><span class="cls_006">OPTIMIZATION</span></div>
+<div style="position:absolute;left:254.00px;top:274.80px" class="cls_007"><span class="cls_007">Karanvir Singh</span></div>
+<div style="position:absolute;left:269.50px;top:298.80px" class="cls_007"><span class="cls_007">18107023</span></div>
+<div style="position:absolute;left:240.50px;top:322.80px" class="cls_007"><span class="cls_007">3</span><span class="cls_008"><sup>rd</sup></span><span class="cls_007"> Year Mechanical</span></div>
+<div style="position:absolute;left:218.57px;top:347.04px" class="cls_007"><span class="cls_007">Punjab Engineering College</span></div>
+<div style="position:absolute;left:247.73px;top:371.04px" class="cls_007"><span class="cls_007">5</span><span class="cls_008"><sup>th</sup></span><span class="cls_007"> February 2021</span></div>
+<div style="position:absolute;left:80.93px;top:601.92px" class="cls_007"><span class="cls_007">Report submitted for the project work on Plant 1 storage inventory and stores</span></div>
+<div style="position:absolute;left:273.00px;top:625.92px" class="cls_007"><span class="cls_007">planning</span></div>
+<div style="position:absolute;left:249.46px;top:674.40px" class="cls_007"><span class="cls_007">Mr. Munish Punj</span></div>
+<div style="position:absolute;left:255.32px;top:698.40px" class="cls_007"><span class="cls_007">Project Mentor</span></div>
+<div style="position:absolute;left:234.13px;top:722.64px" class="cls_007"><span class="cls_007">Mahindra & Mahindra</span></div>
+<div style="position:absolute;left:295.89px;top:771.60px" class="cls_009"><span class="cls_009">i</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:852px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background02.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.44px" class="cls_046"><span class="cls_046">Abstract</span></div>
+<div style="position:absolute;left:72.00px;top:111.12px" class="cls_003"><span class="cls_003">Inventory management is a challenging problem area in supply chain</span></div>
+<div style="position:absolute;left:72.00px;top:136.80px" class="cls_003"><span class="cls_003">management. Companies need to have inventories in warehouses in order to</span></div>
+<div style="position:absolute;left:72.00px;top:162.48px" class="cls_003"><span class="cls_003">fulfil customer demand, meanwhile these inventories have holding costs and</span></div>
+<div style="position:absolute;left:72.00px;top:187.92px" class="cls_003"><span class="cls_003">this is frozen fund that can be lost. Therefore, the task of inventory</span></div>
+<div style="position:absolute;left:72.00px;top:213.60px" class="cls_003"><span class="cls_003">management is to find the quantity of inventories that will fulfil the demand,</span></div>
+<div style="position:absolute;left:72.00px;top:239.28px" class="cls_003"><span class="cls_003">avoiding overstocks. This report aims to identify the key factors that influence</span></div>
+<div style="position:absolute;left:72.00px;top:264.96px" class="cls_003"><span class="cls_003">inventory management practices, investigate efficient and effective inventory</span></div>
+<div style="position:absolute;left:72.00px;top:290.64px" class="cls_003"><span class="cls_003">management approaches, and examine the impact of supplier cooperation on</span></div>
+<div style="position:absolute;left:72.00px;top:316.08px" class="cls_003"><span class="cls_003">supply chain improvement.</span></div>
+<div style="position:absolute;left:72.00px;top:367.44px" class="cls_011"><span class="cls_011">Efficient and effective inventory management practices are derived from</span></div>
+<div style="position:absolute;left:72.00px;top:393.12px" class="cls_011"><span class="cls_011">some case studies and may provide practical guidance for inventory</span></div>
+<div style="position:absolute;left:72.00px;top:418.80px" class="cls_011"><span class="cls_011">management in Swaraj Plant-1. This study provides a valuable tool for</span></div>
+<div style="position:absolute;left:72.00px;top:444.24px" class="cls_011"><span class="cls_011">identifying the key factors in inventory management which can be applied to</span></div>
+<div style="position:absolute;left:72.00px;top:469.92px" class="cls_011"><span class="cls_011">similar problems encountered in actual manufactories.</span></div>
+<div style="position:absolute;left:295.89px;top:771.60px" class="cls_009"><span class="cls_009">i</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1704px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background03.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.44px" class="cls_046"><span class="cls_046">Attestation</span></div>
+<div style="position:absolute;left:72.00px;top:111.12px" class="cls_003"><span class="cls_003">I hereby certify that the work which is being presented in the dissertation</span></div>
+<div style="position:absolute;left:72.00px;top:136.80px" class="cls_003"><span class="cls_003">entitled “INVENTORY MANAGEMENT AND OPTIMIZATION” is an authentic</span></div>
+<div style="position:absolute;left:72.00px;top:162.48px" class="cls_003"><span class="cls_003">record of my own work under the supervision of Mr Munish Punj. All the</span></div>
+<div style="position:absolute;left:72.00px;top:187.92px" class="cls_003"><span class="cls_003">respective references have been citated at appropriate places.</span></div>
+<div style="position:absolute;left:72.00px;top:264.48px" class="cls_013"><span class="cls_013">Date: 23/04/2020</span></div>
+<div style="position:absolute;left:72.00px;top:288.48px" class="cls_014"><span class="cls_014">Supervisor</span></div>
+<div style="position:absolute;left:424.34px;top:288.48px" class="cls_014"><span class="cls_014">Karanvir Singh</span></div>
+<div style="position:absolute;left:72.00px;top:312.72px" class="cls_014"><span class="cls_014">Mr. Munish Punj</span></div>
+<div style="position:absolute;left:72.00px;top:336.96px" class="cls_014"><span class="cls_014">Manager</span></div>
+<div style="position:absolute;left:72.00px;top:360.96px" class="cls_014"><span class="cls_014">Mahindra and Mahindra Ltd</span></div>
+<div style="position:absolute;left:294.29px;top:771.60px" class="cls_009"><span class="cls_009">ii</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2556px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background04.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.44px" class="cls_046"><span class="cls_046">Acknowledgement</span></div>
+<div style="position:absolute;left:72.00px;top:110.40px" class="cls_015"><span class="cls_015">The project on Inventory Management and Optimization of</span></div>
+<div style="position:absolute;left:72.00px;top:141.36px" class="cls_015"><span class="cls_015">plant-1 has provided a very great opportunity to utilize my</span></div>
+<div style="position:absolute;left:72.00px;top:172.56px" class="cls_015"><span class="cls_015">skills of data analysis and concepts of inventory management</span></div>
+<div style="position:absolute;left:72.00px;top:203.52px" class="cls_015"><span class="cls_015">while contributing effectively in this project. I would like to</span></div>
+<div style="position:absolute;left:72.00px;top:234.48px" class="cls_015"><span class="cls_015">thank my mentor </span><span class="cls_010">Mr. Munish Punj</span><span class="cls_015"> for guiding and</span></div>
+<div style="position:absolute;left:72.00px;top:265.68px" class="cls_015"><span class="cls_015">supporting while carrying out my research. He has been a</span></div>
+<div style="position:absolute;left:72.00px;top:296.64px" class="cls_015"><span class="cls_015">great help when I was facing some conceptual dilemma and</span></div>
+<div style="position:absolute;left:72.00px;top:327.60px" class="cls_015"><span class="cls_015">directed me to research in a more proper and systemic</span></div>
+<div style="position:absolute;left:72.00px;top:358.80px" class="cls_015"><span class="cls_015">fashion.</span></div>
+<div style="position:absolute;left:292.68px;top:771.60px" class="cls_009"><span class="cls_009">iii</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3408px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background05.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.44px" class="cls_046"><span class="cls_046">Table of Contents</span></div>
+<div style="position:absolute;left:72.00px;top:111.12px" class="cls_003"><span class="cls_003">Abstract</span></div>
+<div style="position:absolute;left:519.29px;top:111.12px" class="cls_003"><span class="cls_003">i</span></div>
+<div style="position:absolute;left:72.00px;top:141.84px" class="cls_003"><span class="cls_003">Attestation</span></div>
+<div style="position:absolute;left:516.07px;top:141.84px" class="cls_003"><span class="cls_003">ii</span></div>
+<div style="position:absolute;left:72.00px;top:172.32px" class="cls_003"><span class="cls_003">Acknowledgement</span></div>
+<div style="position:absolute;left:512.86px;top:172.32px" class="cls_003"><span class="cls_003">iii</span></div>
+<div style="position:absolute;left:72.00px;top:203.04px" class="cls_003"><span class="cls_003">Table of Contents</span></div>
+<div style="position:absolute;left:512.96px;top:203.04px" class="cls_003"><span class="cls_003">iv</span></div>
+<div style="position:absolute;left:72.00px;top:233.76px" class="cls_003"><span class="cls_003">List of Figures</span></div>
+<div style="position:absolute;left:512.96px;top:233.76px" class="cls_003"><span class="cls_003">vi</span></div>
+<div style="position:absolute;left:72.00px;top:264.24px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:100.00px;top:264.24px" class="cls_003"><span class="cls_003">INTRODUCTION</span></div>
+<div style="position:absolute;left:515.40px;top:264.24px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:84.00px;top:294.96px" class="cls_003"><span class="cls_003">1.1</span></div>
+<div style="position:absolute;left:120.00px;top:294.96px" class="cls_003"><span class="cls_003">Inventory Optimization need</span></div>
+<div style="position:absolute;left:515.40px;top:294.96px" class="cls_003"><span class="cls_003">2</span></div>
+<div style="position:absolute;left:84.00px;top:325.44px" class="cls_003"><span class="cls_003">1.2</span></div>
+<div style="position:absolute;left:120.00px;top:325.44px" class="cls_003"><span class="cls_003">Objectives of Inventory Management</span></div>
+<div style="position:absolute;left:515.40px;top:325.44px" class="cls_003"><span class="cls_003">3</span></div>
+<div style="position:absolute;left:84.00px;top:356.16px" class="cls_003"><span class="cls_003">1.3</span></div>
+<div style="position:absolute;left:120.00px;top:356.16px" class="cls_003"><span class="cls_003">Norms of Inventory Management</span></div>
+<div style="position:absolute;left:515.40px;top:356.16px" class="cls_003"><span class="cls_003">4</span></div>
+<div style="position:absolute;left:72.00px;top:386.88px" class="cls_003"><span class="cls_003">2</span></div>
+<div style="position:absolute;left:100.00px;top:386.88px" class="cls_003"><span class="cls_003">Inventory</span></div>
+<div style="position:absolute;left:515.40px;top:386.88px" class="cls_003"><span class="cls_003">5</span></div>
+<div style="position:absolute;left:84.00px;top:417.36px" class="cls_003"><span class="cls_003">2.1</span></div>
+<div style="position:absolute;left:120.00px;top:417.36px" class="cls_003"><span class="cls_003">Types Of Inventory</span></div>
+<div style="position:absolute;left:515.40px;top:417.36px" class="cls_003"><span class="cls_003">5</span></div>
+<div style="position:absolute;left:84.00px;top:448.08px" class="cls_003"><span class="cls_003">2.2</span></div>
+<div style="position:absolute;left:120.00px;top:448.08px" class="cls_003"><span class="cls_003">Inventory Location Systems</span></div>
+<div style="position:absolute;left:515.40px;top:448.08px" class="cls_003"><span class="cls_003">5</span></div>
+<div style="position:absolute;left:84.00px;top:478.80px" class="cls_003"><span class="cls_003">2.3</span></div>
+<div style="position:absolute;left:120.00px;top:478.80px" class="cls_003"><span class="cls_003">Inventory Placement Methods</span></div>
+<div style="position:absolute;left:515.40px;top:478.80px" class="cls_003"><span class="cls_003">7</span></div>
+<div style="position:absolute;left:100.00px;top:509.28px" class="cls_003"><span class="cls_003">2.3.1   A-B-C Inventory Classification</span></div>
+<div style="position:absolute;left:515.40px;top:509.28px" class="cls_003"><span class="cls_003">7</span></div>
+<div style="position:absolute;left:84.00px;top:540.00px" class="cls_003"><span class="cls_003">2.4</span></div>
+<div style="position:absolute;left:120.00px;top:540.00px" class="cls_003"><span class="cls_003">Inventory Valuation</span></div>
+<div style="position:absolute;left:515.40px;top:540.00px" class="cls_003"><span class="cls_003">9</span></div>
+<div style="position:absolute;left:84.00px;top:570.72px" class="cls_003"><span class="cls_003">2.5</span></div>
+<div style="position:absolute;left:120.00px;top:570.72px" class="cls_003"><span class="cls_003">Identifying Cost Factors and Accessing Cost Components:</span></div>
+<div style="position:absolute;left:508.31px;top:570.72px" class="cls_003"><span class="cls_003">11</span></div>
+<div style="position:absolute;left:72.00px;top:601.20px" class="cls_003"><span class="cls_003">3</span></div>
+<div style="position:absolute;left:100.00px;top:601.20px" class="cls_003"><span class="cls_003">Techniques of Inventory Control</span></div>
+<div style="position:absolute;left:508.31px;top:601.20px" class="cls_003"><span class="cls_003">13</span></div>
+<div style="position:absolute;left:72.00px;top:631.92px" class="cls_003"><span class="cls_003">4</span></div>
+<div style="position:absolute;left:100.00px;top:631.92px" class="cls_003"><span class="cls_003">EOQ and Reorder Point</span></div>
+<div style="position:absolute;left:508.31px;top:631.92px" class="cls_003"><span class="cls_003">14</span></div>
+<div style="position:absolute;left:72.00px;top:662.64px" class="cls_003"><span class="cls_003">5</span></div>
+<div style="position:absolute;left:100.00px;top:662.64px" class="cls_003"><span class="cls_003">EOQ in case of Backordering</span></div>
+<div style="position:absolute;left:508.31px;top:662.64px" class="cls_003"><span class="cls_003">16</span></div>
+<div style="position:absolute;left:72.00px;top:693.12px" class="cls_003"><span class="cls_003">6</span></div>
+<div style="position:absolute;left:100.00px;top:693.12px" class="cls_003"><span class="cls_003">Material Requirements Planning(MRP)</span></div>
+<div style="position:absolute;left:508.31px;top:693.12px" class="cls_003"><span class="cls_003">17</span></div>
+<div style="position:absolute;left:72.00px;top:723.84px" class="cls_003"><span class="cls_003">7</span></div>
+<div style="position:absolute;left:100.00px;top:723.84px" class="cls_003"><span class="cls_003">Lot Sizing Techniques</span></div>
+<div style="position:absolute;left:508.31px;top:723.84px" class="cls_003"><span class="cls_003">20</span></div>
+<div style="position:absolute;left:292.73px;top:771.60px" class="cls_009"><span class="cls_009">iv</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4260px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background06.jpg" width=595 height=842></div>
+<div style="position:absolute;left:84.00px;top:80.16px" class="cls_003"><span class="cls_003">7.1</span></div>
+<div style="position:absolute;left:120.00px;top:80.16px" class="cls_003"><span class="cls_003">Case Studies of Lot Sizing Techniques:</span></div>
+<div style="position:absolute;left:508.31px;top:80.16px" class="cls_003"><span class="cls_003">21</span></div>
+<div style="position:absolute;left:72.00px;top:110.64px" class="cls_003"><span class="cls_003">8</span></div>
+<div style="position:absolute;left:100.00px;top:110.64px" class="cls_003"><span class="cls_003">Stochastic Model Of Inventory Management</span></div>
+<div style="position:absolute;left:508.31px;top:110.64px" class="cls_003"><span class="cls_003">25</span></div>
+<div style="position:absolute;left:72.00px;top:141.36px" class="cls_003"><span class="cls_003">9</span></div>
+<div style="position:absolute;left:100.00px;top:141.36px" class="cls_003"><span class="cls_003">Bibliography</span></div>
+<div style="position:absolute;left:508.31px;top:141.36px" class="cls_003"><span class="cls_003">26</span></div>
+<div style="position:absolute;left:294.34px;top:771.60px" class="cls_009"><span class="cls_009">v</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5112px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background07.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.44px" class="cls_046"><span class="cls_046">List of Figures</span></div>
+<div style="position:absolute;left:72.00px;top:111.12px" class="cls_003"><span class="cls_003">Figure 1</span></div>
+<div style="position:absolute;left:515.40px;top:111.12px" class="cls_003"><span class="cls_003">2</span></div>
+<div style="position:absolute;left:72.00px;top:136.80px" class="cls_003"><span class="cls_003">Figure 3</span></div>
+<div style="position:absolute;left:515.40px;top:136.80px" class="cls_003"><span class="cls_003">8</span></div>
+<div style="position:absolute;left:72.00px;top:162.48px" class="cls_003"><span class="cls_003">Figure 4</span></div>
+<div style="position:absolute;left:508.31px;top:162.48px" class="cls_003"><span class="cls_003">11</span></div>
+<div style="position:absolute;left:72.00px;top:187.92px" class="cls_003"><span class="cls_003">Figure 5</span></div>
+<div style="position:absolute;left:508.31px;top:187.92px" class="cls_003"><span class="cls_003">12</span></div>
+<div style="position:absolute;left:72.00px;top:213.60px" class="cls_003"><span class="cls_003">Figure 6</span></div>
+<div style="position:absolute;left:508.31px;top:213.60px" class="cls_003"><span class="cls_003">18</span></div>
+<div style="position:absolute;left:72.00px;top:239.28px" class="cls_003"><span class="cls_003">Figure 7</span></div>
+<div style="position:absolute;left:508.31px;top:239.28px" class="cls_003"><span class="cls_003">21</span></div>
+<div style="position:absolute;left:292.73px;top:771.60px" class="cls_009"><span class="cls_009">vi</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5964px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background08.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:106.26px" class="cls_016"><span class="cls_016">1  INTRODUCTION</span></div>
+<div style="position:absolute;left:72.00px;top:136.08px" class="cls_003"><span class="cls_003">Inventory management is the branch of business management that covers the</span></div>
+<div style="position:absolute;left:72.00px;top:161.52px" class="cls_003"><span class="cls_003">planning and control of the inventory. Inventory management is a very</span></div>
+<div style="position:absolute;left:72.00px;top:187.20px" class="cls_003"><span class="cls_003">important function that determines the health of the supply chain as well as</span></div>
+<div style="position:absolute;left:72.00px;top:212.88px" class="cls_003"><span class="cls_003">the impacts the financial health of the balance sheet. Every organization</span></div>
+<div style="position:absolute;left:72.00px;top:238.56px" class="cls_003"><span class="cls_003">constantly strives to maintain optimum inventory to be able to meet its</span></div>
+<div style="position:absolute;left:72.00px;top:264.24px" class="cls_003"><span class="cls_003">requirements and avoid over or under inventory that can impact the financial</span></div>
+<div style="position:absolute;left:72.00px;top:289.92px" class="cls_003"><span class="cls_003">figures. Inventory is always dynamic. Inventory management requires constant</span></div>
+<div style="position:absolute;left:72.00px;top:315.36px" class="cls_003"><span class="cls_003">and careful evaluation of external and internal factors and control through</span></div>
+<div style="position:absolute;left:72.00px;top:341.04px" class="cls_003"><span class="cls_003">planning and review. Most of the organizations have a separate department or</span></div>
+<div style="position:absolute;left:72.00px;top:366.72px" class="cls_003"><span class="cls_003">job function called inventory planners who continuously monitor, control and</span></div>
+<div style="position:absolute;left:72.00px;top:392.40px" class="cls_003"><span class="cls_003">review inventory and interface with production, procurement and finance</span></div>
+<div style="position:absolute;left:72.00px;top:418.08px" class="cls_003"><span class="cls_003">departments.</span></div>
+<div style="position:absolute;left:72.00px;top:443.52px" class="cls_003"><span class="cls_003">Inventory management is the practice overseeing and controlling of the</span></div>
+<div style="position:absolute;left:72.00px;top:469.20px" class="cls_003"><span class="cls_003">ordering, storage and use of components that a company uses in the</span></div>
+<div style="position:absolute;left:72.00px;top:494.88px" class="cls_003"><span class="cls_003">production of the items it sells. A component of supply chain management,</span></div>
+<div style="position:absolute;left:72.00px;top:520.56px" class="cls_003"><span class="cls_003">inventory management supervises the flow of goods from manufacturers to</span></div>
+<div style="position:absolute;left:72.00px;top:546.24px" class="cls_003"><span class="cls_003">warehouses and from these facilities to point of sale. Inventory control means</span></div>
+<div style="position:absolute;left:72.00px;top:571.68px" class="cls_003"><span class="cls_003">efficient management of capital invested in raw materials and supplies, work-</span></div>
+<div style="position:absolute;left:72.00px;top:597.36px" class="cls_003"><span class="cls_003">in - progress and finished goods.</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6816px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background09.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.68px" class="cls_014"><span class="cls_014">1.1</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Inventory Optimization need</span></div>
+<div style="position:absolute;left:72.00px;top:104.16px" class="cls_003"><span class="cls_003">Today, inventory management has become vital for the survival of an</span></div>
+<div style="position:absolute;left:72.00px;top:129.84px" class="cls_003"><span class="cls_003">organization. H</span><span class="cls_019">ere’s how inventory management solution can help you</span></div>
+<div style="position:absolute;left:72.00px;top:155.28px" class="cls_019"><span class="cls_019">achieve these benefits:</span></div>
+<div style="position:absolute;left:72.00px;top:754.80px" class="cls_020"><span class="cls_020">Figure 1</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7668px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background10.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.68px" class="cls_014"><span class="cls_014">1.2</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Objectives of Inventory Management</span></div>
+<div style="position:absolute;left:72.00px;top:104.16px" class="cls_003"><span class="cls_003">The objective of inventory management is to maintain inventory at an</span></div>
+<div style="position:absolute;left:72.00px;top:129.84px" class="cls_003"><span class="cls_003">appropriate level to avoid excess or shortage of inventory.</span></div>
+<div style="position:absolute;left:72.00px;top:155.52px" class="cls_003"><span class="cls_003">The objectives specifically may be divided into two categories mentioned</span></div>
+<div style="position:absolute;left:72.00px;top:181.20px" class="cls_003"><span class="cls_003">below:</span></div>
+<div style="position:absolute;left:72.00px;top:206.64px" class="cls_003"><span class="cls_003">A. Operating objectives: They are related to the operating activities of the</span></div>
+<div style="position:absolute;left:72.00px;top:232.32px" class="cls_003"><span class="cls_003">business like purchase, production, sales etc.</span></div>
+<div style="position:absolute;left:90.00px;top:258.72px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> To ensure continuous supply of materials.</span></div>
+<div style="position:absolute;left:90.00px;top:285.12px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> To ensure uninterrupted production process.</span></div>
+<div style="position:absolute;left:90.00px;top:311.52px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> To minimize the risks and losses incurred due to shortage of</span></div>
+<div style="position:absolute;left:109.98px;top:337.20px" class="cls_003"><span class="cls_003">inventory.</span></div>
+<div style="position:absolute;left:90.00px;top:363.60px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> To ensure better customer services.</span></div>
+<div style="position:absolute;left:90.00px;top:390.00px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Avoiding of stock out danger.</span></div>
+<div style="position:absolute;left:72.00px;top:415.44px" class="cls_003"><span class="cls_003">B. Financial Objectives:</span></div>
+<div style="position:absolute;left:90.00px;top:441.84px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> To minimize the capital investment in the inventory.</span></div>
+<div style="position:absolute;left:90.00px;top:468.24px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> To minimize inventory costs.</span></div>
+<div style="position:absolute;left:90.00px;top:494.64px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Economy in purchase.</span></div>
+<div style="position:absolute;left:72.00px;top:520.32px" class="cls_003"><span class="cls_003">Apart from the above objectives, inventory management also emphasize to</span></div>
+<div style="position:absolute;left:72.00px;top:546.00px" class="cls_003"><span class="cls_003">bring down the adverse impacts of holding excess inventory. Holding excess</span></div>
+<div style="position:absolute;left:72.00px;top:571.68px" class="cls_003"><span class="cls_003">inventory lead to the following consequences:</span></div>
+<div style="position:absolute;left:72.00px;top:597.84px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> Unnecessary investment of funds and reduction in profit.</span></div>
+<div style="position:absolute;left:72.00px;top:624.24px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> Increase in holding costs.</span></div>
+<div style="position:absolute;left:72.00px;top:650.88px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> Loss of liquidity.</span></div>
+<div style="position:absolute;left:72.00px;top:677.28px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> Deterioration in inventory.</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8520px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background11.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.68px" class="cls_014"><span class="cls_014">1.3</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Norms of Inventory Management</span></div>
+<div style="position:absolute;left:72.00px;top:104.16px" class="cls_011"><span class="cls_011">Review Inventory periodically and revise stocking patterns and norms</span></div>
+<div style="position:absolute;left:72.00px;top:129.84px" class="cls_003"><span class="cls_003">Inventory is dependent upon the demand as well as the supply chain delivery</span></div>
+<div style="position:absolute;left:72.00px;top:155.52px" class="cls_003"><span class="cls_003">time. Often companies follow one stocking policy for all items. While some</span></div>
+<div style="position:absolute;left:72.00px;top:181.20px" class="cls_003"><span class="cls_003">items may have a longer lead-time thus affecting the inventory holding, the</span></div>
+<div style="position:absolute;left:72.00px;top:206.64px" class="cls_003"><span class="cls_003">demand pattern and the hit frequency in terms of past data may show up</span></div>
+<div style="position:absolute;left:72.00px;top:232.32px" class="cls_003"><span class="cls_003">differently for each of the inventory items. Therefore one standard norm does</span></div>
+<div style="position:absolute;left:72.00px;top:258.00px" class="cls_003"><span class="cls_003">not suit all and can lead to over stocking of inventory as well as in efficiencies</span></div>
+<div style="position:absolute;left:72.00px;top:283.68px" class="cls_003"><span class="cls_003">in the system.</span></div>
+<div style="position:absolute;left:72.00px;top:309.36px" class="cls_011"><span class="cls_011">Get into detailed inventory planning - One size does not fit all</span></div>
+<div style="position:absolute;left:72.00px;top:335.04px" class="cls_003"><span class="cls_003">Understand the inventory types and the specific characteristics of the items</span></div>
+<div style="position:absolute;left:72.00px;top:360.48px" class="cls_003"><span class="cls_003">you are carrying. Then build the inventory stocking parameters taking into</span></div>
+<div style="position:absolute;left:72.00px;top:386.16px" class="cls_003"><span class="cls_003">account the unique characteristics of the particular inventory.</span></div>
+<div style="position:absolute;left:72.00px;top:411.84px" class="cls_003"><span class="cls_003">From amongst your inventory list, you will find that all types of materials are</span></div>
+<div style="position:absolute;left:72.00px;top:437.52px" class="cls_003"><span class="cls_003">not of the same value.</span></div>
+<div style="position:absolute;left:72.00px;top:463.20px" class="cls_011"><span class="cls_011">Study demand pattern, movement patterns and cycles to build suitable</span></div>
+<div style="position:absolute;left:72.00px;top:488.64px" class="cls_011"><span class="cls_011">inventory norms for different categories of inventory</span></div>
+<div style="position:absolute;left:72.00px;top:514.32px" class="cls_003"><span class="cls_003">Popularly known as catalogue management, inventory norms review should be</span></div>
+<div style="position:absolute;left:72.00px;top:540.00px" class="cls_003"><span class="cls_003">carried out based on detailed study of the sales data, demand pattern, sales</span></div>
+<div style="position:absolute;left:72.00px;top:565.68px" class="cls_003"><span class="cls_003">cycles etc. Understanding of the business and sales cycles specific to the</span></div>
+<div style="position:absolute;left:72.00px;top:591.36px" class="cls_003"><span class="cls_003">product category helps one manage inventories better. This helps identify</span></div>
+<div style="position:absolute;left:72.00px;top:616.80px" class="cls_003"><span class="cls_003">those stocks which are required to be managed at a micro level and identify</span></div>
+<div style="position:absolute;left:72.00px;top:642.48px" class="cls_003"><span class="cls_003">the high value and fast moving items that need to be always on the radar to</span></div>
+<div style="position:absolute;left:72.00px;top:668.16px" class="cls_003"><span class="cls_003">avoid stock outs.</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9372px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background12.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">2  Inventory</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">Inventory is an asset that is owned by a business that has the express purpose</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">of being sold to a customer. Inventory refers to the stock pile of the product a</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_003"><span class="cls_003">firm is offering for sale and the components that make up the product. In other</span></div>
+<div style="position:absolute;left:72.00px;top:186.24px" class="cls_003"><span class="cls_003">words, the inventory is used to represent the aggregate of those items of</span></div>
+<div style="position:absolute;left:72.00px;top:211.92px" class="cls_003"><span class="cls_003">tangible assets which are -</span></div>
+<div style="position:absolute;left:72.00px;top:238.32px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> Held for sale in ordinary course of the business.</span></div>
+<div style="position:absolute;left:72.00px;top:264.72px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> In process of production for such sale.</span></div>
+<div style="position:absolute;left:72.00px;top:291.12px" class="cls_021"><span class="cls_021">• </span><span class="cls_003"> To be currently consumed in the production of goods or services to be</span></div>
+<div style="position:absolute;left:72.00px;top:316.80px" class="cls_003"><span class="cls_003">available for sale.</span></div>
+<div style="position:absolute;left:72.00px;top:348.00px" class="cls_014"><span class="cls_014">2.1</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Types Of Inventory</span></div>
+<div style="position:absolute;left:72.00px;top:372.48px" class="cls_003"><span class="cls_003">The four types of inventory most commonly used are Raw Materials, Work-In-</span></div>
+<div style="position:absolute;left:72.00px;top:398.16px" class="cls_003"><span class="cls_003">Progress (WIP), Finished Goods, and Maintenance, Repair, and Overhaul</span></div>
+<div style="position:absolute;left:72.00px;top:423.84px" class="cls_003"><span class="cls_003">(MRO). When you know the type of inventory you have, you can make better</span></div>
+<div style="position:absolute;left:72.00px;top:449.52px" class="cls_003"><span class="cls_003">financial decisions for your supply chain.</span></div>
+<div style="position:absolute;left:90.00px;top:475.20px" class="cls_003"><span class="cls_003">1. Raw Materials</span></div>
+<div style="position:absolute;left:90.00px;top:500.64px" class="cls_003"><span class="cls_003">2. Work-In-Progress</span></div>
+<div style="position:absolute;left:90.00px;top:526.32px" class="cls_003"><span class="cls_003">3. Finished Goods</span></div>
+<div style="position:absolute;left:90.00px;top:552.00px" class="cls_003"><span class="cls_003">4. Overhaul/MRO</span></div>
+<div style="position:absolute;left:72.00px;top:583.20px" class="cls_014"><span class="cls_014">2.2</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Inventory Location Systems</span></div>
+<div style="position:absolute;left:72.00px;top:607.68px" class="cls_003"><span class="cls_003">There are 4 kinds of systems depending upon the product and the space</span></div>
+<div style="position:absolute;left:72.00px;top:633.36px" class="cls_003"><span class="cls_003">available</span></div>
+<div style="position:absolute;left:90.00px;top:659.76px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Memory Based System: They are solely dependent on human beings and</span></div>
+<div style="position:absolute;left:108.00px;top:685.44px" class="cls_003"><span class="cls_003">used under the conditions when storage locations are limited in number</span></div>
+<div style="position:absolute;left:108.00px;top:711.12px" class="cls_003"><span class="cls_003">and the storage size is limited, different SKU’s are easily identifiable and</span></div>
+<div style="position:absolute;left:108.00px;top:736.80px" class="cls_003"><span class="cls_003">the facility is under the supervision 24/7.</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10224px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background13.jpg" width=595 height=842></div>
+<div style="position:absolute;left:90.00px;top:80.88px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Fixed Location system: In this location system, one item is given a home</span></div>
+<div style="position:absolute;left:108.00px;top:106.32px" class="cls_003"><span class="cls_003">and only it can be present at a given time. However, in some (not pure)</span></div>
+<div style="position:absolute;left:108.00px;top:132.00px" class="cls_003"><span class="cls_003">fixed systems two or more items can also be present in the entire</span></div>
+<div style="position:absolute;left:108.00px;top:157.68px" class="cls_003"><span class="cls_003">facility. They were a large amount of space because of honeycombing</span></div>
+<div style="position:absolute;left:108.00px;top:183.36px" class="cls_003"><span class="cls_003">and planning around the largest quantity of an item that will present.</span></div>
+<div style="position:absolute;left:108.00px;top:209.04px" class="cls_003"><span class="cls_003">Honeycombing is done when all products cannot be stacked in a uniform</span></div>
+<div style="position:absolute;left:108.00px;top:234.72px" class="cls_003"><span class="cls_003">manner.</span></div>
+<div style="position:absolute;left:90.00px;top:260.88px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Zoning System: Zoning is centred around an item’s characteristics. Like a</span></div>
+<div style="position:absolute;left:108.00px;top:286.56px" class="cls_003"><span class="cls_003">fixed system, only items with certain characteristics can live in a</span></div>
+<div style="position:absolute;left:108.00px;top:312.24px" class="cls_003"><span class="cls_003">particular area. Items with different attributes can’t live there. An SKU’s</span></div>
+<div style="position:absolute;left:108.00px;top:337.92px" class="cls_003"><span class="cls_003">characteristics would cause the item to be placed within a certain area</span></div>
+<div style="position:absolute;left:108.00px;top:363.60px" class="cls_003"><span class="cls_003">of the stockroom or at a particular level with a section of shelving.</span></div>
+<div style="position:absolute;left:90.00px;top:556.32px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Random Location Systems: This system allows SKU’s to be kept</span></div>
+<div style="position:absolute;left:108.00px;top:582.00px" class="cls_003"><span class="cls_003">anywhere to achieve maximum utilization of space. The only difference</span></div>
+<div style="position:absolute;left:108.00px;top:607.68px" class="cls_003"><span class="cls_003">between random system and memory system is that a particular address</span></div>
+<div style="position:absolute;left:108.00px;top:633.36px" class="cls_003"><span class="cls_003">is assigned to a SKU and these addresses are maintained in a computer</span></div>
+<div style="position:absolute;left:108.00px;top:659.04px" class="cls_003"><span class="cls_003">database or a paper based card-file system. Constant updating of</span></div>
+<div style="position:absolute;left:108.00px;top:684.72px" class="cls_003"><span class="cls_003">information is necessary to track where each item is at any given time.</span></div>
+<div style="position:absolute;left:108.00px;top:710.16px" class="cls_003"><span class="cls_003">Updating must be accomplished through manual paper-based recording,</span></div>
+<div style="position:absolute;left:108.00px;top:735.84px" class="cls_003"><span class="cls_003">bar code scanning, or data entry intensive updating.</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11076px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background14.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.68px" class="cls_014"><span class="cls_014">2.3</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Inventory Placement Methods</span></div>
+<div style="position:absolute;left:72.00px;top:106.02px" class="cls_023"><span class="cls_023">2.3.1 A-B-C Inventory Classification</span></div>
+<div style="position:absolute;left:72.00px;top:131.76px" class="cls_003"><span class="cls_003">ABC analysis (or ABC classification) is used by inventory management teams to</span></div>
+<div style="position:absolute;left:72.00px;top:157.44px" class="cls_003"><span class="cls_003">help identify the most important products in their portfolio and ensure they</span></div>
+<div style="position:absolute;left:72.00px;top:183.12px" class="cls_003"><span class="cls_003">prioritize managing them above those less valuable.</span></div>
+<div style="position:absolute;left:72.00px;top:208.80px" class="cls_003"><span class="cls_003">ABC classification is based on the premise that not all inventory is of equal</span></div>
+<div style="position:absolute;left:72.00px;top:234.48px" class="cls_003"><span class="cls_003">value. Instead if follows the Pareto Principle, where 20% of stock accounts for</span></div>
+<div style="position:absolute;left:72.00px;top:259.92px" class="cls_003"><span class="cls_003">80% of the value to the business. Using ABC classification you can therefore</span></div>
+<div style="position:absolute;left:72.00px;top:285.60px" class="cls_003"><span class="cls_003">split inventory into three categories:</span></div>
+<div style="position:absolute;left:72.00px;top:311.28px" class="cls_024"><span class="cls_024">Category A: this is the smallest category and consists of the most important</span></div>
+<div style="position:absolute;left:72.00px;top:336.96px" class="cls_024"><span class="cls_024">stock items</span></div>
+<div style="position:absolute;left:72.00px;top:362.64px" class="cls_024"><span class="cls_024">Category B: will generally be slightly larger in terms of volumes of SKUs and will</span></div>
+<div style="position:absolute;left:72.00px;top:388.08px" class="cls_024"><span class="cls_024">usually be made up of products of less value</span></div>
+<div style="position:absolute;left:72.00px;top:413.76px" class="cls_024"><span class="cls_024">Category C: this will typically be the largest category where products will</span></div>
+<div style="position:absolute;left:72.00px;top:439.44px" class="cls_024"><span class="cls_024">contribute the least to your business’s bottom line</span></div>
+<div style="position:absolute;left:72.00px;top:490.80px" class="cls_003"><span class="cls_003">Your inventory’s ‘value’ can be based on a number of criteria, such as annual</span></div>
+<div style="position:absolute;left:72.00px;top:516.48px" class="cls_003"><span class="cls_003">sales revenue, profitability or annual consumption value.</span></div>
+<div style="position:absolute;left:72.00px;top:541.92px" class="cls_003"><span class="cls_003">The graph below illustrates how 80% of a company’s sales revenue comes from</span></div>
+<div style="position:absolute;left:72.00px;top:567.60px" class="cls_003"><span class="cls_003">20% of their stock items:</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11928px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background15.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:305.28px" class="cls_020"><span class="cls_020">Figure 2</span></div>
+<div style="position:absolute;left:72.00px;top:354.72px" class="cls_011"><span class="cls_011">Salient Features:</span></div>
+<div style="position:absolute;left:13.68px;top:380.88px" class="cls_003"><span class="cls_003">A Category</span></div>
+<div style="position:absolute;left:212.16px;top:380.88px" class="cls_003"><span class="cls_003">B Category</span></div>
+<div style="position:absolute;left:396.24px;top:380.88px" class="cls_003"><span class="cls_003">C Category</span></div>
+<div style="position:absolute;left:13.68px;top:407.04px" class="cls_003"><span class="cls_003">"A items" with very tight control</span></div>
+<div style="position:absolute;left:212.16px;top:407.04px" class="cls_003"><span class="cls_003">"B items" with less tightly</span></div>
+<div style="position:absolute;left:396.24px;top:407.04px" class="cls_003"><span class="cls_003">"C items" with the simplest</span></div>
+<div style="position:absolute;left:13.68px;top:432.48px" class="cls_003"><span class="cls_003">and accurate records</span></div>
+<div style="position:absolute;left:212.16px;top:432.48px" class="cls_003"><span class="cls_003">controlled and accurate</span></div>
+<div style="position:absolute;left:396.24px;top:432.48px" class="cls_003"><span class="cls_003">controls possible and minimal</span></div>
+<div style="position:absolute;left:212.16px;top:458.16px" class="cls_003"><span class="cls_003">records</span></div>
+<div style="position:absolute;left:396.24px;top:458.16px" class="cls_003"><span class="cls_003">records</span></div>
+<div style="position:absolute;left:13.68px;top:510.00px" class="cls_003"><span class="cls_003">Senior level involvement on</span></div>
+<div style="position:absolute;left:212.16px;top:510.00px" class="cls_003"><span class="cls_003">Middle level involvement</span></div>
+<div style="position:absolute;left:396.24px;top:510.00px" class="cls_003"><span class="cls_003">Junior level involvement</span></div>
+<div style="position:absolute;left:13.68px;top:535.68px" class="cls_003"><span class="cls_003">purchase and sale of this</span></div>
+<div style="position:absolute;left:13.68px;top:561.36px" class="cls_003"><span class="cls_003">category</span></div>
+<div style="position:absolute;left:72.00px;top:612.96px" class="cls_011"><span class="cls_011">Why ABC ANALYSIS?</span></div>
+<div style="position:absolute;left:90.00px;top:638.64px" class="cls_003"><span class="cls_003">1. Control over costly items in which lot of capital is invested.</span></div>
+<div style="position:absolute;left:90.00px;top:664.32px" class="cls_003"><span class="cls_003">2. Reduction in the storage expenses.</span></div>
+<div style="position:absolute;left:90.00px;top:690.00px" class="cls_003"><span class="cls_003">3. Resource analysis which is a feature of ABC in which the most important</span></div>
+<div style="position:absolute;left:108.00px;top:715.68px" class="cls_003"><span class="cls_003">category of items are tracked and the stock level must align with the</span></div>
+<div style="position:absolute;left:108.00px;top:741.12px" class="cls_003"><span class="cls_003">customer’s demand.</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">8</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:12780px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background16.jpg" width=595 height=842></div>
+<div style="position:absolute;left:90.00px;top:80.16px" class="cls_003"><span class="cls_003">4. Economy equal time and labour is not devoted to all the categories.</span></div>
+<div style="position:absolute;left:90.00px;top:105.60px" class="cls_003"><span class="cls_003">5. It makes easy implementation of JIT inventory management system.</span></div>
+<div style="position:absolute;left:72.00px;top:131.28px" class="cls_011"><span class="cls_011">Disadvantages of ABC Analysis?</span></div>
+<div style="position:absolute;left:90.00px;top:156.96px" class="cls_003"><span class="cls_003">1. Instability: ABC frequently results in having between a quarter or half of</span></div>
+<div style="position:absolute;left:108.00px;top:182.64px" class="cls_003"><span class="cls_003">items changing their category which makes it difficult to access the</span></div>
+<div style="position:absolute;left:108.00px;top:208.32px" class="cls_003"><span class="cls_003">stability of this analysis.</span></div>
+<div style="position:absolute;left:90.00px;top:233.76px" class="cls_003"><span class="cls_003">2. Static Behaviour: This analysis is at odds with basic demand patterns like</span></div>
+<div style="position:absolute;left:108.00px;top:259.44px" class="cls_003"><span class="cls_003">product launches: a newly launched item has a low volume in design but</span></div>
+<div style="position:absolute;left:108.00px;top:285.12px" class="cls_003"><span class="cls_003">its sales are yet to be estimated.</span></div>
+<div style="position:absolute;left:90.00px;top:310.80px" class="cls_002"><span class="cls_002">3.</span><span class="cls_026"> </span><span class="cls_003"> As far as statistical indicators go, the amount of information extracted</span></div>
+<div style="position:absolute;left:108.00px;top:336.48px" class="cls_003"><span class="cls_003">from the demand history and packed through the ABC classes is</span></div>
+<div style="position:absolute;left:108.00px;top:362.16px" class="cls_003"><span class="cls_003">exceedingly low.</span></div>
+<div style="position:absolute;left:90.00px;top:387.60px" class="cls_002"><span class="cls_002">4.</span><span class="cls_026"> </span><span class="cls_003"> The ABC analysis attributes </span><span class="cls_027">importance</span><span class="cls_003"> of a product based on its</span></div>
+<div style="position:absolute;left:108.00px;top:413.28px" class="cls_003"><span class="cls_003">frequency of usage or revenue. However, in many cases the</span></div>
+<div style="position:absolute;left:108.00px;top:438.96px" class="cls_003"><span class="cls_003">unavailability of a not frequently consumed or valuable item can have</span></div>
+<div style="position:absolute;left:108.00px;top:464.64px" class="cls_003"><span class="cls_003">the most devastating consequences and high stock levels and</span></div>
+<div style="position:absolute;left:108.00px;top:490.32px" class="cls_003"><span class="cls_003">importance should be accorded to this item.</span></div>
+<div style="position:absolute;left:72.00px;top:521.28px" class="cls_014"><span class="cls_014">2.4</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Inventory Valuation</span></div>
+<div style="position:absolute;left:72.00px;top:546.00px" class="cls_003"><span class="cls_003">Inventory valuation helps to calculate the gross profit which is excess sales cost</span></div>
+<div style="position:absolute;left:72.00px;top:571.68px" class="cls_003"><span class="cls_003">of the goods sold. It is calculated by comparing the cost of goods sold with the</span></div>
+<div style="position:absolute;left:72.00px;top:597.36px" class="cls_003"><span class="cls_003">revenue of the accounting period.</span></div>
+<div style="position:absolute;left:72.00px;top:659.76px" class="cls_003"><span class="cls_003">There are four accepted methods of inventory valuation:</span></div>
+<div style="position:absolute;left:90.00px;top:685.92px" class="cls_028"><span class="cls_028">•</span><span class="cls_026"> </span><span class="cls_005">  Specific Identification</span></div>
+<div style="position:absolute;left:90.00px;top:708.48px" class="cls_028"><span class="cls_028">•</span><span class="cls_026"> </span><span class="cls_005">  First-In, First-Out (FIFO)</span></div>
+<div style="position:absolute;left:90.00px;top:731.28px" class="cls_028"><span class="cls_028">•</span><span class="cls_026"> </span><span class="cls_005">  Last-In, First-Out (LIFO)</span></div>
+<div style="position:absolute;left:90.00px;top:753.84px" class="cls_028"><span class="cls_028">•</span><span class="cls_026"> </span><span class="cls_005">  Weighted Average Cost</span></div>
+<div style="position:absolute;left:293.95px;top:771.60px" class="cls_009"><span class="cls_009">9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:13632px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background17.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:80.16px" class="cls_003"><span class="cls_003">Specific Indication: Under this method, every item in your inventory is tracked</span></div>
+<div style="position:absolute;left:72.00px;top:105.60px" class="cls_003"><span class="cls_003">from the time it is stocked to when it is sold. It is usually used for large items</span></div>
+<div style="position:absolute;left:72.00px;top:131.28px" class="cls_003"><span class="cls_003">that can be easily identified and have widely different features and costs</span></div>
+<div style="position:absolute;left:72.00px;top:156.96px" class="cls_003"><span class="cls_003">associated with these features. It just requires an item to be tracked accurately</span></div>
+<div style="position:absolute;left:72.00px;top:182.64px" class="cls_003"><span class="cls_003">from the time it is stocked to the time it is sold.</span></div>
+<div style="position:absolute;left:72.00px;top:208.32px" class="cls_003"><span class="cls_003">First-In, First Out(FIFO): This method is based on the premise that the first</span></div>
+<div style="position:absolute;left:72.00px;top:233.76px" class="cls_003"><span class="cls_003">inventory purchased is the first to be sold. The remaining assets in inventory</span></div>
+<div style="position:absolute;left:72.00px;top:259.44px" class="cls_003"><span class="cls_003">are matched to the assets that are most recently purchased or produced.</span></div>
+<div style="position:absolute;left:72.00px;top:285.12px" class="cls_003"><span class="cls_003">It is one of the most common methods of inventory valuation used by</span></div>
+<div style="position:absolute;left:72.00px;top:310.80px" class="cls_003"><span class="cls_003">businesses as it is simple and easy to understand. During inflation, the FIFO</span></div>
+<div style="position:absolute;left:72.00px;top:336.48px" class="cls_003"><span class="cls_003">method yields a higher value of the ending inventory, lower cost of goods sold,</span></div>
+<div style="position:absolute;left:72.00px;top:362.16px" class="cls_003"><span class="cls_003">and a higher gross profit.</span></div>
+<div style="position:absolute;left:72.00px;top:387.60px" class="cls_003"><span class="cls_003">Last-In, First-Out(LIFO): In this method, the last purchased items are sold first</span></div>
+<div style="position:absolute;left:72.00px;top:413.28px" class="cls_003"><span class="cls_003">while the older inventory remains in stock. This method is hardly used by</span></div>
+<div style="position:absolute;left:72.00px;top:438.96px" class="cls_003"><span class="cls_003">businesses since the older inventories are rarely sold and gradually lose their</span></div>
+<div style="position:absolute;left:72.00px;top:464.64px" class="cls_003"><span class="cls_003">value. This results in significant loss to the business. The only method to use</span></div>
+<div style="position:absolute;left:72.00px;top:490.32px" class="cls_003"><span class="cls_003">LIFO is to lower the recorded profits and the businessmen has to pay less tax.</span></div>
+<div style="position:absolute;left:72.00px;top:515.76px" class="cls_003"><span class="cls_003">Weighted average cost: This method of inventory valuation identifies the value</span></div>
+<div style="position:absolute;left:72.00px;top:541.44px" class="cls_003"><span class="cls_003">of inventory and cost of goods sold by calculating an average unit cost for all</span></div>
+<div style="position:absolute;left:72.00px;top:567.12px" class="cls_003"><span class="cls_003">goods available for sale during a given period of time. This valuation method</span></div>
+<div style="position:absolute;left:72.00px;top:592.80px" class="cls_003"><span class="cls_003">assumes that ending inventory consists of all goods available for sale.</span></div>
+<div style="position:absolute;left:72.00px;top:672.00px" class="cls_003"><span class="cls_003">This method is commonly used to determine a cost for units that are</span></div>
+<div style="position:absolute;left:72.00px;top:697.68px" class="cls_003"><span class="cls_003">indistinguishable from one another and it is difficult to track the individual</span></div>
+<div style="position:absolute;left:72.00px;top:723.12px" class="cls_003"><span class="cls_003">costs.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:14484px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background18.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.68px" class="cls_014"><span class="cls_014">2.5</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Identifying Cost Factors and Accessing Cost Components:</span></div>
+<div style="position:absolute;left:72.00px;top:561.12px" class="cls_020"><span class="cls_020">Figure 3</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:15336px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background19.jpg" width=595 height=842></div>
+<div style="position:absolute;left:279.60px;top:84.48px" class="cls_029"><span class="cls_029">Cost</span></div>
+<div style="position:absolute;left:262.60px;top:95.28px" class="cls_029"><span class="cls_029">Components</span></div>
+<div style="position:absolute;left:177.39px;top:131.52px" class="cls_029"><span class="cls_029">Ordering Cost</span></div>
+<div style="position:absolute;left:179.56px;top:142.32px" class="cls_029"><span class="cls_029">Components</span></div>
+<div style="position:absolute;left:135.14px;top:178.56px" class="cls_029"><span class="cls_029">Transportation</span></div>
+<div style="position:absolute;left:217.47px;top:177.60px" class="cls_030"><span class="cls_030">Procurement</span></div>
+<div style="position:absolute;left:156.53px;top:189.36px" class="cls_029"><span class="cls_029">Cost</span></div>
+<div style="position:absolute;left:218.85px;top:189.12px" class="cls_030"><span class="cls_030">from vendor</span></div>
+<div style="position:absolute;left:147.33px;top:224.64px" class="cls_030"><span class="cls_030">Material</span></div>
+<div style="position:absolute;left:146.52px;top:236.16px" class="cls_030"><span class="cls_030">Handling</span></div>
+<div style="position:absolute;left:229.58px;top:277.44px" class="cls_030"><span class="cls_030">Payment</span></div>
+<div style="position:absolute;left:222.86px;top:319.44px" class="cls_029"><span class="cls_029">Total Cost of</span></div>
+<div style="position:absolute;left:236.60px;top:330.24px" class="cls_029"><span class="cls_029">Order</span></div>
+<div style="position:absolute;left:261.54px;top:366.48px" class="cls_029"><span class="cls_029">Carrying Cost</span></div>
+<div style="position:absolute;left:262.60px;top:377.28px" class="cls_029"><span class="cls_029">Components</span></div>
+<div style="position:absolute;left:273.88px;top:416.64px" class="cls_031"><span class="cls_031">Capital Cost</span></div>
+<div style="position:absolute;left:285.06px;top:456.48px" class="cls_031"><span class="cls_031">Storage</span></div>
+<div style="position:absolute;left:276.57px;top:470.88px" class="cls_031"><span class="cls_031">Space Cost</span></div>
+<div style="position:absolute;left:279.89px;top:503.52px" class="cls_031"><span class="cls_031">Inventory</span></div>
+<div style="position:absolute;left:273.11px;top:517.92px" class="cls_031"><span class="cls_031">Service Cost</span></div>
+<div style="position:absolute;left:279.89px;top:550.56px" class="cls_031"><span class="cls_031">Inventory</span></div>
+<div style="position:absolute;left:281.55px;top:564.96px" class="cls_031"><span class="cls_031">Risk Cost</span></div>
+<div style="position:absolute;left:72.00px;top:594.72px" class="cls_020"><span class="cls_020">Figure 4</span></div>
+<div style="position:absolute;left:72.00px;top:641.28px" class="cls_003"><span class="cls_003">Our goal is to optimize our inventory management to minimize our ordering</span></div>
+<div style="position:absolute;left:72.00px;top:666.96px" class="cls_003"><span class="cls_003">Cost as well as our carrying cost according to the demand and inventory flow.</span></div>
+<div style="position:absolute;left:72.00px;top:692.40px" class="cls_003"><span class="cls_003">How can we achieve this idea?. The answer lies in implementing  inventory</span></div>
+<div style="position:absolute;left:72.00px;top:718.08px" class="cls_003"><span class="cls_003">management techniques on our inventory to keep a track of the inventory as</span></div>
+<div style="position:absolute;left:72.00px;top:743.76px" class="cls_003"><span class="cls_003">well as accurately reordering stock in the right quantity to avoid any loss.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:16188px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background20.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">3  Techniques of Inventory Control</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">Inventory control refers to a process of ensuring that appropriate amount of</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">stock are maintained by a business, so as to be able to meet customer demand</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_003"><span class="cls_003">without delay while keeping the costs associated with holding stock to a</span></div>
+<div style="position:absolute;left:72.00px;top:186.24px" class="cls_003"><span class="cls_003">minimum. Inventory control signifies a planned approach of finding when to</span></div>
+<div style="position:absolute;left:72.00px;top:211.92px" class="cls_003"><span class="cls_003">shift, what to shift, how much to shift and how much to stock so that costs in</span></div>
+<div style="position:absolute;left:72.00px;top:237.60px" class="cls_003"><span class="cls_003">buying and storing are optimally minimum without interrupting production or</span></div>
+<div style="position:absolute;left:72.00px;top:263.28px" class="cls_003"><span class="cls_003">affecting sales. To solve these problems of inventory management various</span></div>
+<div style="position:absolute;left:72.00px;top:288.72px" class="cls_003"><span class="cls_003">techniques are there.</span></div>
+<div style="position:absolute;left:72.00px;top:314.40px" class="cls_003"><span class="cls_003">These techniques are divided into two categories - modern techniques and</span></div>
+<div style="position:absolute;left:72.00px;top:340.08px" class="cls_003"><span class="cls_003">traditional techniques.</span></div>
+<div style="position:absolute;left:72.00px;top:365.76px" class="cls_021"><span class="cls_021">v</span><span class="cls_022"> </span><span class="cls_003">MODERN TECHNIQUES</span></div>
+<div style="position:absolute;left:90.00px;top:391.44px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Economic Order Quantity (EOQ)</span></div>
+<div style="position:absolute;left:90.00px;top:416.88px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Re-order Point(ROP)</span></div>
+<div style="position:absolute;left:90.00px;top:442.56px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Fixing stock levels</span></div>
+<div style="position:absolute;left:90.00px;top:468.24px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Selective Inventory Control</span></div>
+<div style="position:absolute;left:108.00px;top:493.92px" class="cls_021"><span class="cls_021">§</span><span class="cls_022"> </span><span class="cls_003"> ABC Analysis</span></div>
+<div style="position:absolute;left:108.00px;top:519.60px" class="cls_021"><span class="cls_021">§</span><span class="cls_022"> </span><span class="cls_003"> VED Analysis</span></div>
+<div style="position:absolute;left:108.00px;top:545.04px" class="cls_021"><span class="cls_021">§</span><span class="cls_022"> </span><span class="cls_003"> SDE Analysis</span></div>
+<div style="position:absolute;left:108.00px;top:570.72px" class="cls_021"><span class="cls_021">§</span><span class="cls_022"> </span><span class="cls_003"> FSN Analysis</span></div>
+<div style="position:absolute;left:72.00px;top:596.40px" class="cls_021"><span class="cls_021">v</span><span class="cls_022"> </span><span class="cls_003">Traditional Techniques</span></div>
+<div style="position:absolute;left:90.00px;top:622.08px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Inventory Control Ratios</span></div>
+<div style="position:absolute;left:90.00px;top:647.76px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Two Bin System</span></div>
+<div style="position:absolute;left:90.00px;top:673.44px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Perpetual Inventory System</span></div>
+<div style="position:absolute;left:90.00px;top:698.88px" class="cls_021"><span class="cls_021">Ø</span><span class="cls_022"> </span><span class="cls_003">Periodic Order System</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17040px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background21.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">4  EOQ and Reorder Point</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">The optimal size of an order for replenishment of inventory is called economic</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">order quantity. Economic order quantity (EOQ) or optimum order quantity is</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_003"><span class="cls_003">that size of the order where total inventory costs (ordering costs + carrying</span></div>
+<div style="position:absolute;left:72.00px;top:186.24px" class="cls_003"><span class="cls_003">costs) are minimized. It can be seen that EOQ is the most basic model used for</span></div>
+<div style="position:absolute;left:72.00px;top:211.92px" class="cls_003"><span class="cls_003">inventory control. However , the basic EOQ model was based on the</span></div>
+<div style="position:absolute;left:72.00px;top:237.60px" class="cls_003"><span class="cls_003">assumption that demand is constant, no shortage is considered and the lead-</span></div>
+<div style="position:absolute;left:18.96px;top:302.88px" class="cls_011"><span class="cls_011">The total cost expressed per unit</span></div>
+<div style="position:absolute;left:18.96px;top:328.32px" class="cls_011"><span class="cls_011">time is ,</span></div>
+<div style="position:absolute;left:18.96px;top:354.00px" class="cls_011"><span class="cls_011">Cost/unit time =Setup cost +</span></div>
+<div style="position:absolute;left:18.96px;top:379.68px" class="cls_011"><span class="cls_011">Product cost + Holding cost</span></div>
+<div style="position:absolute;left:72.00px;top:440.88px" class="cls_003"><span class="cls_003">time is zero or constant.</span></div>
+<div style="position:absolute;left:311.28px;top:508.56px" class="cls_024"><span class="cls_024">K is Setup Cost</span></div>
+<div style="position:absolute;left:72.00px;top:523.44px" class="cls_003"><span class="cls_003">To find optimal value:</span></div>
+<div style="position:absolute;left:311.28px;top:534.24px" class="cls_024"><span class="cls_024">Q is Lot-size</span></div>
+<div style="position:absolute;left:311.28px;top:559.92px" class="cls_024"><span class="cls_024">a is demand rate</span></div>
+<div style="position:absolute;left:311.28px;top:585.60px" class="cls_024"><span class="cls_024">h is holding cost</span></div>
+<div style="position:absolute;left:311.28px;top:611.28px" class="cls_024"><span class="cls_024">c is product cost</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">14</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17892px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background22.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:80.16px" class="cls_003"><span class="cls_003">Assumptions: The following assumptions are made:</span></div>
+<div style="position:absolute;left:72.00px;top:105.60px" class="cls_003"><span class="cls_003">1. Demand is continuous, relatively stable, and known.</span></div>
+<div style="position:absolute;left:72.00px;top:131.28px" class="cls_003"><span class="cls_003">2. Ordering cost and inventory carrying cost are constant and known.</span></div>
+<div style="position:absolute;left:75.17px;top:156.96px" class="cls_003"><span class="cls_003">3. The replacement occurs all at once.</span></div>
+<div style="position:absolute;left:72.00px;top:208.32px" class="cls_011"><span class="cls_011">Reorder Point</span></div>
+<div style="position:absolute;left:72.00px;top:233.76px" class="cls_003"><span class="cls_003">After determining the optimum quantity of purchase order, the next problem</span></div>
+<div style="position:absolute;left:72.00px;top:259.44px" class="cls_003"><span class="cls_003">is to specify the point of time when the order should be placed. Re-order level</span></div>
+<div style="position:absolute;left:72.00px;top:285.12px" class="cls_003"><span class="cls_003">is that level of inventory at which an order should be placed for replenishing</span></div>
+<div style="position:absolute;left:72.00px;top:310.80px" class="cls_003"><span class="cls_003">the current stock of inventory. It is also called reorder level. The determination</span></div>
+<div style="position:absolute;left:72.00px;top:336.48px" class="cls_003"><span class="cls_003">of re-order point depends upon the lead time, usage rate and safety stock.</span></div>
+<div style="position:absolute;left:72.00px;top:362.16px" class="cls_003"><span class="cls_003">These terms are explained below:</span></div>
+<div style="position:absolute;left:90.00px;top:387.60px" class="cls_033"><span class="cls_033">1.</span><span class="cls_034"> </span><span class="cls_033">Lead Time: </span><span class="cls_024">Lead time refers to the time gap between placing the order</span></div>
+<div style="position:absolute;left:108.00px;top:413.28px" class="cls_024"><span class="cls_024">and actually receiving the items ordered.</span></div>
+<div style="position:absolute;left:90.00px;top:438.96px" class="cls_033"><span class="cls_033">2.</span><span class="cls_034"> </span><span class="cls_033">Usage Rate: </span><span class="cls_024">It refers to the rate of consumption of raw material per</span></div>
+<div style="position:absolute;left:108.00px;top:464.64px" class="cls_024"><span class="cls_024">day. Usage Rate = Total annual consumption / No. of days in a year.</span></div>
+<div style="position:absolute;left:90.00px;top:490.32px" class="cls_033"><span class="cls_033">3.</span><span class="cls_034"> </span><span class="cls_033">Safety Stock: </span><span class="cls_024">It is the minimum quantity of inventory which a firm</span></div>
+<div style="position:absolute;left:108.00px;top:515.76px" class="cls_024"><span class="cls_024">decides to maintain always to protect itself against the risk and losses</span></div>
+<div style="position:absolute;left:108.00px;top:541.44px" class="cls_024"><span class="cls_024">likely to occur due to stoppage in production and loss of sale, due to</span></div>
+<div style="position:absolute;left:108.00px;top:567.12px" class="cls_024"><span class="cls_024">non- availability of inventory.</span></div>
+<div style="position:absolute;left:90.00px;top:607.68px" class="cls_048"><span class="cls_048">Re Order Point = (Lead Time x Usage Rate) + Safety Stock</span></div>
+<div style="position:absolute;left:72.00px;top:645.60px" class="cls_035"><span class="cls_035">Safety stock = (Maximum daily usage * Maximum lead time in days)</span></div>
+<div style="position:absolute;left:72.00px;top:665.28px" class="cls_035"><span class="cls_035">- (Average daily usage * Average lead time in days).</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:18744px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background23.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">5  EOQ in case of Backordering</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">The total cost per unit time is</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">Cost /time = Setup cost + Product cost + Holding cost + Backorder cost</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_024"><span class="cls_024">We have to minimize this value</span></div>
+<div style="position:absolute;left:385.92px;top:178.80px" class="cls_024"><span class="cls_024">S is the order level when</span></div>
+<div style="position:absolute;left:385.92px;top:204.48px" class="cls_024"><span class="cls_024">back ordering is allowed</span></div>
+<div style="position:absolute;left:72.00px;top:248.16px" class="cls_024"><span class="cls_024">The factor multiplying h in this expression is the average on-hand inventory</span></div>
+<div style="position:absolute;left:72.00px;top:273.84px" class="cls_024"><span class="cls_024">level.</span></div>
+<div style="position:absolute;left:72.00px;top:299.28px" class="cls_024"><span class="cls_024">Similarly the factor multiplying p is the average backorder level, </span><span class="cls_036">B</span><span class="cls_024"> , Where</span></div>
+<div style="position:absolute;left:72.00px;top:387.84px" class="cls_038"><span class="cls_038">Setting to zero the partial derivatives of T with respect Q and S yields</span></div>
+<div style="position:absolute;left:72.00px;top:577.92px" class="cls_003"><span class="cls_003">Comparing to the case with no backorder, the optimal lot size and the cycle</span></div>
+<div style="position:absolute;left:72.00px;top:595.20px" class="cls_003"><span class="cls_003">times are increased by the factory</span></div>
+<div style="position:absolute;left:72.00px;top:662.88px" class="cls_003"><span class="cls_003">The ratio between the order level and the lot size depends only on the relative</span></div>
+<div style="position:absolute;left:72.00px;top:688.56px" class="cls_003"><span class="cls_003">values of holding and backorder cost.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">16</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:19596px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background24.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">6  Material Requirements Planning(MRP)</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">Controlling not only what item is purchased and in what quantities, but also</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">the timing of its arrival through computerized systems is called </span><span class="cls_011">materials</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_011"><span class="cls_011">requirements planning (MRP). </span><span class="cls_003">This concept of the right item, in the right</span></div>
+<div style="position:absolute;left:72.00px;top:186.24px" class="cls_003"><span class="cls_003">quantity, and at the right time.</span></div>
+<div style="position:absolute;left:72.00px;top:211.92px" class="cls_003"><span class="cls_003">Independent demand inventory management is customer oriented. The</span></div>
+<div style="position:absolute;left:72.00px;top:237.60px" class="cls_003"><span class="cls_003">objective of Reorder Point rules and formulae is high customer service levels</span></div>
+<div style="position:absolute;left:72.00px;top:263.28px" class="cls_003"><span class="cls_003">and low operating costs. Dependent demand systems, however, are</span></div>
+<div style="position:absolute;left:72.00px;top:288.72px" class="cls_003"><span class="cls_003">manufacturing oriented. The objective of dependent demand inventory control</span></div>
+<div style="position:absolute;left:72.00px;top:314.40px" class="cls_003"><span class="cls_003">is to support the master production schedule. Even if you have a low stock</span></div>
+<div style="position:absolute;left:72.00px;top:340.08px" class="cls_003"><span class="cls_003">level of an item, it won’t be ordered unless and until it is needed to produce</span></div>
+<div style="position:absolute;left:72.00px;top:365.76px" class="cls_003"><span class="cls_003">something for the master schedule—a true requirements philosophy of</span></div>
+<div style="position:absolute;left:72.00px;top:391.44px" class="cls_003"><span class="cls_003">inventory control.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">17</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:20448px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background25.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:460.56px" class="cls_020"><span class="cls_020">Figure 5</span></div>
+<div style="position:absolute;left:72.00px;top:481.68px" class="cls_003"><span class="cls_003">Management Requirement Planning Systems need some information to run</span></div>
+<div style="position:absolute;left:72.00px;top:507.12px" class="cls_003"><span class="cls_003">effectively. This information basically includes production quantity, production</span></div>
+<div style="position:absolute;left:72.00px;top:532.80px" class="cls_003"><span class="cls_003">method and inventory records that an organization has currently available.</span></div>
+<div style="position:absolute;left:72.00px;top:558.48px" class="cls_003"><span class="cls_003">Due to this reason, MRP requires Master Production Schedule (MPS), Bill of</span></div>
+<div style="position:absolute;left:72.00px;top:584.16px" class="cls_003"><span class="cls_003">Materials (BOM) and an Inventory Record File (IRF).</span></div>
+<div style="position:absolute;left:90.00px;top:635.28px" class="cls_028"><span class="cls_028">•</span><span class="cls_026"> </span><span class="cls_003">  Master Production Schedule (MPS) shows which product, in which</span></div>
+<div style="position:absolute;left:108.00px;top:660.96px" class="cls_003"><span class="cls_003">quantity and in which time is needed to be delivered to the customer or</span></div>
+<div style="position:absolute;left:108.00px;top:686.64px" class="cls_003"><span class="cls_003">to be ready. To gain this information, MPS benefits from the exact</span></div>
+<div style="position:absolute;left:108.00px;top:712.32px" class="cls_003"><span class="cls_003">orders which customer identify, through all the needed details and</span></div>
+<div style="position:absolute;left:108.00px;top:738.00px" class="cls_003"><span class="cls_003">forecasts, which is related to the number of orders expectation.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">18</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:21300px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background26.jpg" width=595 height=842></div>
+<div style="position:absolute;left:90.00px;top:106.32px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Bills of Material (BOM) specifies how to make or produce a product.</span></div>
+<div style="position:absolute;left:108.00px;top:132.00px" class="cls_003"><span class="cls_003">Each final product consists of intermediate products which get together</span></div>
+<div style="position:absolute;left:108.00px;top:157.68px" class="cls_003"><span class="cls_003">in certain way and variants led to a BOM that keeps their list in hierarchy</span></div>
+<div style="position:absolute;left:90.00px;top:204.72px" class="cls_021"><span class="cls_021">•</span><span class="cls_022"> </span><span class="cls_003"> Inventory Records File (IRF) is the third one of primary inputs of MRP,</span></div>
+<div style="position:absolute;left:108.00px;top:230.40px" class="cls_003"><span class="cls_003">which stores information about current status of products the company/</span></div>
+<div style="position:absolute;left:108.00px;top:256.08px" class="cls_003"><span class="cls_003">organization. This information includes not only product amount on</span></div>
+<div style="position:absolute;left:108.00px;top:281.76px" class="cls_003"><span class="cls_003">hand but also product supplier, safety stock amount, and production</span></div>
+<div style="position:absolute;left:108.00px;top:307.44px" class="cls_003"><span class="cls_003">lead time, among other information</span></div>
+<div style="position:absolute;left:72.00px;top:358.56px" class="cls_011"><span class="cls_011">Advantages of MRP System:</span></div>
+<div style="position:absolute;left:90.00px;top:384.24px" class="cls_003"><span class="cls_003">1. Large decrease in the investment of inventories.</span></div>
+<div style="position:absolute;left:90.00px;top:409.92px" class="cls_003"><span class="cls_003">2. Customer service levels of 92 percent or better.</span></div>
+<div style="position:absolute;left:90.00px;top:435.60px" class="cls_003"><span class="cls_003">3. Decrease in purchase costs.</span></div>
+<div style="position:absolute;left:90.00px;top:461.04px" class="cls_003"><span class="cls_003">4. Dramatic increase in productivity.</span></div>
+<div style="position:absolute;left:90.00px;top:486.72px" class="cls_003"><span class="cls_003">5. No shortage lists.</span></div>
+<div style="position:absolute;left:90.00px;top:533.76px" class="cls_021"><span class="cls_021">Þ</span><span class="cls_022"> </span><span class="cls_041">MRP should be thought more as a concept than as a technique. In the</span></div>
+<div style="position:absolute;left:108.00px;top:559.44px" class="cls_041"><span class="cls_041">next section we discuss many lot sizing techniques implemented after</span></div>
+<div style="position:absolute;left:108.00px;top:585.12px" class="cls_041"><span class="cls_041">using MRP and discuss the results in many case studies.</span></div>
+<div style="position:absolute;left:90.00px;top:611.52px" class="cls_021"><span class="cls_021">Þ</span><span class="cls_022"> </span><span class="cls_041">The EOQ model is often used when the demand is independent and</span></div>
+<div style="position:absolute;left:108.00px;top:637.20px" class="cls_041"><span class="cls_041">when the demand is constant with setup and holding cost as constant.</span></div>
+<div style="position:absolute;left:90.00px;top:662.88px" class="cls_028"><span class="cls_028">Þ</span><span class="cls_026"> </span><span class="cls_041">One important area in material requirements planning is selecting the</span></div>
+<div style="position:absolute;left:108.00px;top:688.32px" class="cls_041"><span class="cls_041">appropriate lot sizing technique for inventory items at various levels of</span></div>
+<div style="position:absolute;left:108.00px;top:714.00px" class="cls_041"><span class="cls_041">a system</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">19</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:22152px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background27.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">7  Lot Sizing Techniques</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">After MRP, there is one more decision point which helps to determine how</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">much quantity of products the company should order (or produce) to satisfy</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_003"><span class="cls_003">the demand needs, and this is called as Lot-Sizing.</span></div>
+<div style="position:absolute;left:72.00px;top:186.24px" class="cls_003"><span class="cls_003">There are many lot sizing rules available as being those most recognized:</span></div>
+<div style="position:absolute;left:90.00px;top:211.92px" class="cls_003"><span class="cls_003">1. Fixed Order Quantity(FOQ)</span></div>
+<div style="position:absolute;left:90.00px;top:237.60px" class="cls_003"><span class="cls_003">2. Economic Order Quantity(EOQ)</span></div>
+<div style="position:absolute;left:90.00px;top:263.28px" class="cls_003"><span class="cls_003">3. Lot for lot(LFL)</span></div>
+<div style="position:absolute;left:90.00px;top:288.72px" class="cls_003"><span class="cls_003">4. Fixed period requirements(FPR)</span></div>
+<div style="position:absolute;left:90.00px;top:314.40px" class="cls_003"><span class="cls_003">5. Periodic order quantity(POQ)</span></div>
+<div style="position:absolute;left:90.00px;top:340.08px" class="cls_003"><span class="cls_003">6. Least unit cost(LUC)</span></div>
+<div style="position:absolute;left:90.00px;top:365.76px" class="cls_003"><span class="cls_003">7. Least total cost(LTC)</span></div>
+<div style="position:absolute;left:90.00px;top:391.44px" class="cls_003"><span class="cls_003">8. Parts period balancing (PPB)</span></div>
+<div style="position:absolute;left:90.00px;top:416.88px" class="cls_003"><span class="cls_003">9. Wagner-Whitin algorithm</span></div>
+<div style="position:absolute;left:72.00px;top:468.24px" class="cls_011"><span class="cls_011">Static lot sizing</span><span class="cls_003"> methods consist of ordering a fixed quantity or the exact</span></div>
+<div style="position:absolute;left:72.00px;top:493.92px" class="cls_003"><span class="cls_003">amount of requirements for the date needed.</span></div>
+<div style="position:absolute;left:72.00px;top:545.04px" class="cls_011"><span class="cls_011">Periodic lot sizing</span><span class="cls_003"> groups several requirements within a time interval together</span></div>
+<div style="position:absolute;left:72.00px;top:570.72px" class="cls_003"><span class="cls_003">to form a lot. Periodic lot sizing procedures are effective when used with cheap</span></div>
+<div style="position:absolute;left:72.00px;top:596.40px" class="cls_003"><span class="cls_003">items when inventory cost is low.</span></div>
+<div style="position:absolute;left:72.00px;top:642.72px" class="cls_011"><span class="cls_011">Dynamic lot sizing</span><span class="cls_003"> considers the effect of cumulative needs across time to</span></div>
+<div style="position:absolute;left:72.00px;top:668.40px" class="cls_003"><span class="cls_003">determine the best order quantities. As time advances and new production</span></div>
+<div style="position:absolute;left:72.00px;top:694.08px" class="cls_003"><span class="cls_003">requirements for inbound materials are known, previously developed planned</span></div>
+<div style="position:absolute;left:72.00px;top:719.76px" class="cls_003"><span class="cls_003">orders may end up changing. This could also be the result of forecast</span></div>
+<div style="position:absolute;left:72.00px;top:745.20px" class="cls_003"><span class="cls_003">variability.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">20</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:23004px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background28.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.68px" class="cls_014"><span class="cls_014">7.1</span><span class="cls_018"> </span><span class="cls_014"> </span><span class="cls_047">Case Studies of Lot Sizing Techniques:</span></div>
+<div style="position:absolute;left:72.00px;top:565.68px" class="cls_024"><span class="cls_024">Lot Sizing Methods can be used in multi-levels and a combination of algorithms</span></div>
+<div style="position:absolute;left:72.00px;top:591.36px" class="cls_024"><span class="cls_024">can be implemented to determine the lot size to minimize the holding cost and</span></div>
+<div style="position:absolute;left:72.00px;top:616.80px" class="cls_024"><span class="cls_024">the setup cost. In general, one approach has proven effective in every situation</span></div>
+<div style="position:absolute;left:72.00px;top:642.48px" class="cls_024"><span class="cls_024">and requires a fixed order quantity level at the end-item level, EOQ or LFL at</span></div>
+<div style="position:absolute;left:72.00px;top:668.16px" class="cls_024"><span class="cls_024">the intermediate level and Periodic Order quantity at the lower levels. When</span></div>
+<div style="position:absolute;left:72.00px;top:693.84px" class="cls_024"><span class="cls_024">the setup cost is low LFL at the intermediate level proves most effective.</span></div>
+<div style="position:absolute;left:72.00px;top:719.52px" class="cls_024"><span class="cls_024">We discuss 3 case studies to relate the feasibility with respect to data.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">21</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:23856px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background29.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:80.16px" class="cls_003"><span class="cls_003">Case Study 1:</span></div>
+<div style="position:absolute;left:72.00px;top:105.60px" class="cls_003"><span class="cls_003">In this case it is aimed to determine costs according to a stable schedule. As it</span></div>
+<div style="position:absolute;left:72.00px;top:131.28px" class="cls_003"><span class="cls_003">can be seen in Figure, demand quantities are almost the same for each</span></div>
+<div style="position:absolute;left:72.00px;top:156.96px" class="cls_003"><span class="cls_003">component. (Order quantities are respectively 94, 91, 107, 113, 116, 110, 97</span></div>
+<div style="position:absolute;left:72.00px;top:182.64px" class="cls_003"><span class="cls_003">and 116.) With this production schedule it is assumed that quantities of</span></div>
+<div style="position:absolute;left:72.00px;top:208.32px" class="cls_003"><span class="cls_003">demands of production or assembly are almost exact through an annual period</span></div>
+<div style="position:absolute;left:72.00px;top:233.76px" class="cls_003"><span class="cls_003">and it can be easily forecasted according to past information and data.</span></div>
+<div style="position:absolute;left:72.00px;top:259.44px" class="cls_003"><span class="cls_003">Deduction:</span></div>
+<div style="position:absolute;left:72.00px;top:285.12px" class="cls_003"><span class="cls_003">When the setup cost is relatively smaller in the beginning, firstly L4L then LUC</span></div>
+<div style="position:absolute;left:72.00px;top:310.80px" class="cls_003"><span class="cls_003">seem likely to be</span></div>
+<div style="position:absolute;left:72.00px;top:336.48px" class="cls_003"><span class="cls_003">the most</span></div>
+<div style="position:absolute;left:72.00px;top:362.16px" class="cls_003"><span class="cls_003">advantageous</span></div>
+<div style="position:absolute;left:72.00px;top:387.60px" class="cls_003"><span class="cls_003">approach, as the</span></div>
+<div style="position:absolute;left:72.00px;top:413.28px" class="cls_003"><span class="cls_003">ratio of setup cost</span></div>
+<div style="position:absolute;left:72.00px;top:438.96px" class="cls_003"><span class="cls_003">and holding cost is</span></div>
+<div style="position:absolute;left:72.00px;top:464.64px" class="cls_003"><span class="cls_003">relatively smaller,</span></div>
+<div style="position:absolute;left:72.00px;top:490.32px" class="cls_003"><span class="cls_003">so the system</span></div>
+<div style="position:absolute;left:72.00px;top:515.76px" class="cls_003"><span class="cls_003">prefers to avoid to</span></div>
+<div style="position:absolute;left:72.00px;top:541.44px" class="cls_003"><span class="cls_003">stock, which is the aim of L4L. LUC gives almost the same cost values for the</span></div>
+<div style="position:absolute;left:72.00px;top:567.12px" class="cls_003"><span class="cls_003">beginning, while it meets demands with less order number. After that, the</span></div>
+<div style="position:absolute;left:72.00px;top:592.80px" class="cls_003"><span class="cls_003">more setup cost is implemented for order, the less advantageous L4L shows</span></div>
+<div style="position:absolute;left:72.00px;top:618.48px" class="cls_003"><span class="cls_003">and the most dynamic and complicated methods, PPB and LUC provide less</span></div>
+<div style="position:absolute;left:72.00px;top:643.92px" class="cls_003"><span class="cls_003">costs. But, there is no regular relation between ratio and their cost. While LUC</span></div>
+<div style="position:absolute;left:72.00px;top:669.60px" class="cls_003"><span class="cls_003">is more advantageous between ratio value of 600 and 1200, PBB takes</span></div>
+<div style="position:absolute;left:72.00px;top:695.28px" class="cls_003"><span class="cls_003">advantage between 1200 and 1800. It is not possible to find direct relation</span></div>
+<div style="position:absolute;left:72.00px;top:720.96px" class="cls_003"><span class="cls_003">after one point to state that one of the methods is more advantageous. In</span></div>
+<div style="position:absolute;left:72.00px;top:746.64px" class="cls_003"><span class="cls_003">general, EOQ almost seems that it provides the biggest cost value, but the</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">22</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:24708px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background30.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:80.16px" class="cls_003"><span class="cls_003">point which was mention at the beginning of this section is important in this</span></div>
+<div style="position:absolute;left:72.00px;top:105.60px" class="cls_003"><span class="cls_003">sense. For very big number of setup cost it seems to be a more profitable tool</span></div>
+<div style="position:absolute;left:72.00px;top:131.28px" class="cls_003"><span class="cls_003">to determine order quantity than L4L, although it makes some stocks for the</span></div>
+<div style="position:absolute;left:72.00px;top:156.96px" class="cls_003"><span class="cls_003">next orders. For very small numbers of holding cost, L4L method does not</span></div>
+<div style="position:absolute;left:72.00px;top:182.64px" class="cls_003"><span class="cls_003">seem to be a useful method.</span></div>
+<div style="position:absolute;left:72.00px;top:208.32px" class="cls_003"><span class="cls_003">Case Study 2:</span></div>
+<div style="position:absolute;left:72.00px;top:233.76px" class="cls_003"><span class="cls_003">In the second case, it is assumed that the company has a wavy demand</span></div>
+<div style="position:absolute;left:72.00px;top:259.44px" class="cls_003"><span class="cls_003">schedule. This means company’s production plan depends on customer</span></div>
+<div style="position:absolute;left:72.00px;top:285.12px" class="cls_003"><span class="cls_003">demand. Demand quantity can even be almost zero, after a period which has a</span></div>
+<div style="position:absolute;left:72.00px;top:310.80px" class="cls_003"><span class="cls_003">very large number.</span></div>
+<div style="position:absolute;left:72.00px;top:336.48px" class="cls_003"><span class="cls_003">Figure adjacent</span></div>
+<div style="position:absolute;left:72.00px;top:362.16px" class="cls_003"><span class="cls_003">shows the demands</span></div>
+<div style="position:absolute;left:72.00px;top:387.60px" class="cls_003"><span class="cls_003">for case 2</span></div>
+<div style="position:absolute;left:72.00px;top:413.28px" class="cls_003"><span class="cls_003">(respectively 94, 4,</span></div>
+<div style="position:absolute;left:72.00px;top:438.96px" class="cls_003"><span class="cls_003">33, 146, 7, 185, 27</span></div>
+<div style="position:absolute;left:72.00px;top:464.64px" class="cls_003"><span class="cls_003">and 10). For these</span></div>
+<div style="position:absolute;left:72.00px;top:490.32px" class="cls_003"><span class="cls_003">situations, it is hard</span></div>
+<div style="position:absolute;left:72.00px;top:515.76px" class="cls_003"><span class="cls_003">to forecast the next</span></div>
+<div style="position:absolute;left:72.00px;top:541.44px" class="cls_003"><span class="cls_003">period demand or total demand.</span></div>
+<div style="position:absolute;left:72.00px;top:567.12px" class="cls_003"><span class="cls_003">Deduction: In the first period, the most profitable method seems a lot similar</span></div>
+<div style="position:absolute;left:72.00px;top:592.80px" class="cls_003"><span class="cls_003">to case-1, as the same reason lies on this reality. From beginning for ratio value</span></div>
+<div style="position:absolute;left:72.00px;top:618.48px" class="cls_003"><span class="cls_003">of 80, the two most advantageous methods are L4L and PBB. (Second method</span></div>
+<div style="position:absolute;left:72.00px;top:643.92px" class="cls_003"><span class="cls_003">was LUC after L4L in case 1).</span></div>
+<div style="position:absolute;left:72.00px;top:669.60px" class="cls_003"><span class="cls_003">Similarly PBB provides less cost with less number of orders. It will be</span></div>
+<div style="position:absolute;left:72.00px;top:695.28px" class="cls_003"><span class="cls_003">advantageous to use PBB while the company has some problematic with its</span></div>
+<div style="position:absolute;left:72.00px;top:720.96px" class="cls_003"><span class="cls_003">suppliers like absence of communication or being very far away from a</span></div>
+<div style="position:absolute;left:72.00px;top:746.64px" class="cls_003"><span class="cls_003">supplier. After beginning part of the chart, L4L loses its advantage, LUC and</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">23</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:25560px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background31.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:80.16px" class="cls_003"><span class="cls_003">PBB seeming likely to be most advantageous methods. But like in the first case,</span></div>
+<div style="position:absolute;left:72.00px;top:105.60px" class="cls_003"><span class="cls_003">it is not possible to say that PBB or LUC is more profitable than another one for</span></div>
+<div style="position:absolute;left:72.00px;top:131.28px" class="cls_003"><span class="cls_003">any given internal, as it depends on ratio value, so on setup and holding costs.</span></div>
+<div style="position:absolute;left:72.00px;top:156.96px" class="cls_003"><span class="cls_003">On the other hand EOQ seems to be the least advantageous approach while it</span></div>
+<div style="position:absolute;left:72.00px;top:182.64px" class="cls_003"><span class="cls_003">starts to give more benefit than L4L in an earlier point than case-1.</span></div>
+<div style="position:absolute;left:72.00px;top:228.96px" class="cls_003"><span class="cls_003">Case 3: Finally, in the third case, it is urged that to handle an approximation of</span></div>
+<div style="position:absolute;left:72.00px;top:254.64px" class="cls_003"><span class="cls_003">seasonal production with two periods representing a season. The Company has</span></div>
+<div style="position:absolute;left:72.00px;top:280.32px" class="cls_003"><span class="cls_003">the information that demand of one season level will be relatively more, after</span></div>
+<div style="position:absolute;left:72.00px;top:305.76px" class="cls_003"><span class="cls_003">a less-demanded season. As it is seen in Figure , orders are almost in the same</span></div>
+<div style="position:absolute;left:72.00px;top:331.44px" class="cls_003"><span class="cls_003">level for the seasons -</span></div>
+<div style="position:absolute;left:72.00px;top:357.12px" class="cls_003"><span class="cls_003">two periods.</span></div>
+<div style="position:absolute;left:72.00px;top:382.80px" class="cls_003"><span class="cls_003">Deduction:  As usual, L4L</span></div>
+<div style="position:absolute;left:72.00px;top:408.48px" class="cls_003"><span class="cls_003">is one of the most</span></div>
+<div style="position:absolute;left:72.00px;top:433.92px" class="cls_003"><span class="cls_003">efficient methods in the</span></div>
+<div style="position:absolute;left:72.00px;top:459.60px" class="cls_003"><span class="cls_003">beginning. Now other</span></div>
+<div style="position:absolute;left:72.00px;top:485.28px" class="cls_003"><span class="cls_003">two methods, PBB and</span></div>
+<div style="position:absolute;left:72.00px;top:510.96px" class="cls_003"><span class="cls_003">LUC accompany it, not</span></div>
+<div style="position:absolute;left:72.00px;top:536.64px" class="cls_003"><span class="cls_003">just one of them and differently L4L loses its less cost performance, very earlier</span></div>
+<div style="position:absolute;left:72.00px;top:562.08px" class="cls_003"><span class="cls_003">than the other cases. PBB and LUC try to give best result in an irregular way</span></div>
+<div style="position:absolute;left:72.00px;top:587.76px" class="cls_003"><span class="cls_003">while ratio of setup cost and holding cost increases. It is hard to estimate that</span></div>
+<div style="position:absolute;left:72.00px;top:613.44px" class="cls_003"><span class="cls_003">one of these methods is advantageous. PBB gives less cost for some intervals</span></div>
+<div style="position:absolute;left:72.00px;top:639.12px" class="cls_003"><span class="cls_003">while LUC has less value for other intervals. Here it is easily seen that EOQ</span></div>
+<div style="position:absolute;left:72.00px;top:664.80px" class="cls_003"><span class="cls_003">takes advantage of providing less cost than L4L, earliest in the whole cases. If</span></div>
+<div style="position:absolute;left:72.00px;top:690.24px" class="cls_003"><span class="cls_003">the effect of disadvantage of making stock of EOQ is considered, it can be</span></div>
+<div style="position:absolute;left:72.00px;top:715.92px" class="cls_003"><span class="cls_003">predicted that EOQ is more advantageous.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">24</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:26412px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background32.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">8  Stochastic Model Of Inventory Management</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">As we studied the various methods of inventory management and steps to be</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">taken while calculating lot sizes in various situations. As we witnesses in 2020</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_003"><span class="cls_003">in the COVID-19, demand was very uncertain and wavy. To investigate and</span></div>
+<div style="position:absolute;left:72.00px;top:186.24px" class="cls_003"><span class="cls_003">optimize the inventory of plant 1 in this period of uncertain demand, I plan to</span></div>
+<div style="position:absolute;left:72.00px;top:211.92px" class="cls_003"><span class="cls_003">research more on the Stochastic model of inventory management. To forecast</span></div>
+<div style="position:absolute;left:72.00px;top:237.60px" class="cls_003"><span class="cls_003">the demand in future I aim to work on stastical models of inventory</span></div>
+<div style="position:absolute;left:72.00px;top:263.28px" class="cls_003"><span class="cls_003">management while using probabilistic determination and inferential statistics.</span></div>
+<div style="position:absolute;left:72.00px;top:314.40px" class="cls_003"><span class="cls_003">The probability that demand is less than or equal to b is F(b) when demand is</span></div>
+<div style="position:absolute;left:72.00px;top:340.08px" class="cls_003"><span class="cls_003">discrete.</span></div>
+<div style="position:absolute;left:72.00px;top:442.56px" class="cls_003"><span class="cls_003">When demand is assumed to be continuous, f(x) is its density function. The</span></div>
+<div style="position:absolute;left:72.00px;top:468.24px" class="cls_003"><span class="cls_003">probability that the demand is between a and b is</span></div>
+<div style="position:absolute;left:72.00px;top:564.96px" class="cls_024"><span class="cls_024">When there is demand uncertainty, dynamic lot sizing methods are efficient</span></div>
+<div style="position:absolute;left:72.00px;top:590.64px" class="cls_024"><span class="cls_024">especially the Wagner-Whitin algorithm. The MRP cannot be used when</span></div>
+<div style="position:absolute;left:72.00px;top:616.08px" class="cls_024"><span class="cls_024">dynamic inventory methods are applied at intermediate level because there is</span></div>
+<div style="position:absolute;left:72.00px;top:641.76px" class="cls_024"><span class="cls_024">lot of fluctuation in Master Production Schedule</span></div>
+<div style="position:absolute;left:72.00px;top:693.12px" class="cls_011"><span class="cls_011">Depending upon the companies data, further research on this model is</span></div>
+<div style="position:absolute;left:72.00px;top:718.80px" class="cls_011"><span class="cls_011">pending and conclusion will be drawn after analysing all the key aspects and</span></div>
+<div style="position:absolute;left:72.00px;top:744.48px" class="cls_011"><span class="cls_011">important business driving factors.</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">25</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:27264px;width:595px;height:842px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="/static/background33.jpg" width=595 height=842></div>
+<div style="position:absolute;left:72.00px;top:79.62px" class="cls_016"><span class="cls_016">9  Bibliography</span></div>
+<div style="position:absolute;left:72.00px;top:109.44px" class="cls_003"><span class="cls_003">S. Priyan, M. Palanivel, R. Uthayakumar. Mathematical modeling for EOQ</span></div>
+<div style="position:absolute;left:72.00px;top:134.88px" class="cls_003"><span class="cls_003">inventory system with advance payment and fuzzy Parameters. International</span></div>
+<div style="position:absolute;left:72.00px;top:160.56px" class="cls_003"><span class="cls_003">Journal of Supply and Operations Management. ISSN-Online: 2383-2525</span></div>
+<div style="position:absolute;left:72.00px;top:211.92px" class="cls_003"><span class="cls_003">Denny Hong-Mo Yeh. INVENTORY MANAGEMENT</span></div>
+<div style="position:absolute;left:72.00px;top:251.04px" class="cls_013"><span class="cls_013">Samanta, P. (2015, June 01). (PDF) introduction to inventory management.</span></div>
+<div style="position:absolute;left:72.00px;top:267.12px" class="cls_013"><span class="cls_013">Retrieved February 18, 2021, from</span></div>
+<div style="position:absolute;left:72.00px;top:283.20px" class="cls_049"><span class="cls_049"> </span><A HREF="https://www.researchgate.net/publication/317970709_introduction_to_i/">https://www.researchgate.net/publication/317970709_INTRODUCTION_TO_I</A> </div>
+<div style="position:absolute;left:72.00px;top:299.28px" class="cls_049"><span class="cls_049">NVENTORY_MANAGEMENT</span></div>
+<div style="position:absolute;left:72.00px;top:359.52px" class="cls_013"><span class="cls_013">Darya Plinere , Arkady Borisov. Case Study on Inventory Management</span></div>
+<div style="position:absolute;left:72.00px;top:375.60px" class="cls_013"><span class="cls_013">Improvement. Information Technology and Management Science. doi:</span></div>
+<div style="position:absolute;left:72.00px;top:391.68px" class="cls_013"><span class="cls_013">10.1515/itms-2015-0014</span></div>
+<div style="position:absolute;left:72.00px;top:451.92px" class="cls_013"><span class="cls_013">International journal of production economics. (n.d.). Retrieved February 18,</span></div>
+<div style="position:absolute;left:72.00px;top:468.00px" class="cls_013"><span class="cls_013">2021, from </span><A HREF="https://www.journals.elsevier.com/international-journal-of-/">https://www.journals.elsevier.com/international-journal-of-</A> </span></div>
+<div style="position:absolute;left:72.00px;top:484.08px" class="cls_049"><span class="cls_049">production-economics</span></div>
+<div style="position:absolute;left:290.40px;top:771.60px" class="cls_009"><span class="cls_009">26</span></div>
+</div>
+
+</body>
+</html>

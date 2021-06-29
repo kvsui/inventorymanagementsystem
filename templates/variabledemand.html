@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <label for="model">Choose the Kind of Demand:</label>
+            <select name="demandtype" id="demandtype">
+                <option value="Static">Static Demand</option>
+                <option value="Linear">Linearly Increasing Demand</option>
+                 <option value="Exp">Exponentially Decreaing Demand</option> 
+            </select>
+
+            <fieldset class="form-group">
+                     <div class="form-group">
+                        <br><br>
+                        {{ form.SetCost.label(class="form-control-label") }}
+
+                    
+                        {{ form.SetCost(class="form-control form-control-lg")}}
+                    </div>
+                    <div class="form-group">
+                        {{ form.HoldingCost.label(class="form-control-label") }}
+
+                    
+                        {{ form.HoldingCost(class="form-control form-control-lg")}}
+                    </div>
+                    <div class="form-group">
+                        {{ form.a.label(class="form-control-label") }}
+
+                    
+                        {{ form.a(class="form-control form-control-lg")}}
+                    </div>
+                    <div class="form-group">
+                        {{ form.b.label(class="form-control-label") }}
+
+                    
+                        {{ form.b(class="form-control form-control-lg")}}
+                    </div>
+                    <div class="form-group">
+                        {{ form.c.label(class="form-control-label") }}
+
+                    
+                        {{ form.c(class="form-control form-control-lg")}}
+                    </div>
+             </fieldset>       
+            <div class="form-group">
+                {{ form.Submit(class="btn btn-outline-info") }}
+            </div>
+    </div>
+{% endblock content %}
