@@ -437,4 +437,4 @@ def expd(setcost, holdcost, A, B, C):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
